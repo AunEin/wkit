@@ -1,0 +1,189 @@
+animations:
+  - entity: base\characters\entities\player\photo_mode\player_wa_photomode.ent
+    set: vesna_mpg_f\ves_mpg_fem_pm.anims
+  - entity: ep1\characters\entities\player\photo_mode\player_wa_photomode_ep1.ent
+    set: vesna_mpg_f\ves_mpg_fem_pm.anims
+  - entity: base\characters\entities\player\photo_mode\player_wa_photomode11.ent
+    set: vesna_mpg_f\ves_mpg_fem_pm.anims
+  - entity: base\characters\entities\player\photo_mode\player_wa_photomode12.ent
+    set: vesna_mpg_f\ves_mpg_fem_pm.anims
+  - entity: base\characters\entities\player\photo_mode\player_wa_photomode13.ent
+    set: vesna_mpg_f\ves_mpg_fem_pm.anims
+  - entity: base\characters\entities\player\photo_mode\player_wa_photomode14.ent
+    set: vesna_mpg_f\ves_mpg_fem_pm.anims
+  - entity: base\characters\entities\player\photo_mode\player_wa_photomode21.ent
+    set: vesna_mpg_f\ves_mpg_fem_pm.anims
+  - entity: base\characters\entities\player\photo_mode\player_wa_photomode22.ent
+    set: vesna_mpg_f\ves_mpg_fem_pm.anims
+  - entity: base\characters\entities\player\photo_mode\player_wa_photomode23.ent
+    set: vesna_mpg_f\ves_mpg_fem_pm.anims
+  - entity: base\characters\entities\player\photo_mode\player_wa_photomode24.ent
+    set: vesna_mpg_f\ves_mpg_fem_pm.anims
+  - entity: base\characters\entities\player\photo_mode\player_wa_photomode31.ent
+    set: vesna_mpg_f\ves_mpg_fem_pm.anims
+  - entity: base\characters\entities\player\photo_mode\player_wa_photomode32.ent
+    set: vesna_mpg_f\ves_mpg_fem_pm.anims
+  - entity: base\characters\entities\player\photo_mode\player_wa_photomode33.ent
+    set: vesna_mpg_f\ves_mpg_fem_pm.anims
+  - entity: base\characters\entities\player\photo_mode\player_wa_photomode34.ent
+    set: vesna_mpg_f\ves_mpg_fem_pm.anims
+  - entity: base\characters\entities\player\photo_mode\player_wa_photomode41.ent
+    set: vesna_mpg_f\ves_mpg_fem_pm.anims
+  - entity: base\characters\entities\player\photo_mode\player_wa_photomode42.ent
+    set: vesna_mpg_f\ves_mpg_fem_pm.anims
+  - entity: base\characters\entities\player\photo_mode\player_wa_photomode43.ent
+    set: vesna_mpg_f\ves_mpg_fem_pm.anims
+  - entity: base\characters\entities\player\photo_mode\player_wa_photomode44.ent
+    set: vesna_mpg_f\ves_mpg_fem_pm.anims
+  - entity: base\characters\entities\player\photo_mode\player_wa_photomode11m.ent
+    set: vesna_mpg_f\ves_mpg_fem_pm.anims
+  - entity: base\characters\entities\player\photo_mode\player_wa_photomode12m.ent
+    set: vesna_mpg_f\ves_mpg_fem_pm.anims
+  - entity: base\characters\entities\player\photo_mode\player_wa_photomode13m.ent
+    set: vesna_mpg_f\ves_mpg_fem_pm.anims
+  - entity: base\characters\entities\player\photo_mode\player_wa_photomode14m.ent
+    set: vesna_mpg_f\ves_mpg_fem_pm.anims
+  - entity: base\characters\entities\player\photo_mode\player_wa_photomode21m.ent
+    set: vesna_mpg_f\ves_mpg_fem_pm.anims
+  - entity: base\characters\entities\player\photo_mode\player_wa_photomode22m.ent
+    set: vesna_mpg_f\ves_mpg_fem_pm.anims
+  - entity: base\characters\entities\player\photo_mode\player_wa_photomode23m.ent
+    set: vesna_mpg_f\ves_mpg_fem_pm.anims
+  - entity: base\characters\entities\player\photo_mode\player_wa_photomode24m.ent
+    set: vesna_mpg_f\ves_mpg_fem_pm.anims
+  - entity: base\characters\entities\player\photo_mode\player_wa_photomode31m.ent
+    set: vesna_mpg_f\ves_mpg_fem_pm.anims
+  - entity: base\characters\entities\player\photo_mode\player_wa_photomode32m.ent
+    set: vesna_mpg_f\ves_mpg_fem_pm.anims
+  - entity: base\characters\entities\player\photo_mode\player_wa_photomode33m.ent
+    set: vesna_mpg_f\ves_mpg_fem_pm.anims
+  - entity: base\characters\entities\player\photo_mode\player_wa_photomode34m.ent
+    set: vesna_mpg_f\ves_mpg_fem_pm.anims
+  - entity: base\characters\entities\player\photo_mode\player_wa_photomode41m.ent
+    set: vesna_mpg_f\ves_mpg_fem_pm.anims
+  - entity: base\characters\entities\player\photo_mode\player_wa_photomode42m.ent
+    set: vesna_mpg_f\ves_mpg_fem_pm.anims
+  - entity: base\characters\entities\player\photo_mode\player_wa_photomode43m.ent
+    set: vesna_mpg_f\ves_mpg_fem_pm.anims
+  - entity: base\characters\entities\player\photo_mode\player_wa_photomode44m.ent
+    set: vesna_mpg_f\ves_mpg_fem_pm.anims
+  - entity: ep1\characters\entities\player\photo_mode\player_wa_photomode_ep111.ent
+    set: vesna_mpg_f\ves_mpg_fem_pm.anims
+  - entity: ep1\characters\entities\player\photo_mode\player_wa_photomode_ep112.ent
+    set: vesna_mpg_f\ves_mpg_fem_pm.anims
+  - entity: ep1\characters\entities\player\photo_mode\player_wa_photomode_ep113.ent
+    set: vesna_mpg_f\ves_mpg_fem_pm.anims
+  - entity: ep1\characters\entities\player\photo_mode\player_wa_photomode_ep114.ent
+    set: vesna_mpg_f\ves_mpg_fem_pm.anims
+  - entity: ep1\characters\entities\player\photo_mode\player_wa_photomode_ep121.ent
+    set: vesna_mpg_f\ves_mpg_fem_pm.anims
+  - entity: ep1\characters\entities\player\photo_mode\player_wa_photomode_ep122.ent
+    set: vesna_mpg_f\ves_mpg_fem_pm.anims
+  - entity: ep1\characters\entities\player\photo_mode\player_wa_photomode_ep123.ent
+    set: vesna_mpg_f\ves_mpg_fem_pm.anims
+  - entity: ep1\characters\entities\player\photo_mode\player_wa_photomode_ep124.ent
+    set: vesna_mpg_f\ves_mpg_fem_pm.anims
+  - entity: ep1\characters\entities\player\photo_mode\player_wa_photomode_ep131.ent
+    set: vesna_mpg_f\ves_mpg_fem_pm.anims
+  - entity: ep1\characters\entities\player\photo_mode\player_wa_photomode_ep132.ent
+    set: vesna_mpg_f\ves_mpg_fem_pm.anims
+  - entity: ep1\characters\entities\player\photo_mode\player_wa_photomode_ep133.ent
+    set: vesna_mpg_f\ves_mpg_fem_pm.anims
+  - entity: ep1\characters\entities\player\photo_mode\player_wa_photomode_ep134.ent
+    set: vesna_mpg_f\ves_mpg_fem_pm.anims
+  - entity: ep1\characters\entities\player\photo_mode\player_wa_photomode_ep141.ent
+    set: vesna_mpg_f\ves_mpg_fem_pm.anims
+  - entity: ep1\characters\entities\player\photo_mode\player_wa_photomode_ep142.ent
+    set: vesna_mpg_f\ves_mpg_fem_pm.anims
+  - entity: ep1\characters\entities\player\photo_mode\player_wa_photomode_ep143.ent
+    set: vesna_mpg_f\ves_mpg_fem_pm.anims
+  - entity: ep1\characters\entities\player\photo_mode\player_wa_photomode_ep144.ent
+    set: vesna_mpg_f\ves_mpg_fem_pm.anims
+  - entity: ep1\characters\entities\player\photo_mode\player_wa_photomode_ep111m.ent
+    set: vesna_mpg_f\ves_mpg_fem_pm.anims
+  - entity: ep1\characters\entities\player\photo_mode\player_wa_photomode_ep112m.ent
+    set: vesna_mpg_f\ves_mpg_fem_pm.anims
+  - entity: ep1\characters\entities\player\photo_mode\player_wa_photomode_ep113m.ent
+    set: vesna_mpg_f\ves_mpg_fem_pm.anims
+  - entity: ep1\characters\entities\player\photo_mode\player_wa_photomode_ep114m.ent
+    set: vesna_mpg_f\ves_mpg_fem_pm.anims
+  - entity: ep1\characters\entities\player\photo_mode\player_wa_photomode_ep121m.ent
+    set: vesna_mpg_f\ves_mpg_fem_pm.anims
+  - entity: ep1\characters\entities\player\photo_mode\player_wa_photomode_ep122m.ent
+    set: vesna_mpg_f\ves_mpg_fem_pm.anims
+  - entity: ep1\characters\entities\player\photo_mode\player_wa_photomode_ep123m.ent
+    set: vesna_mpg_f\ves_mpg_fem_pm.anims
+  - entity: ep1\characters\entities\player\photo_mode\player_wa_photomode_ep124m.ent
+    set: vesna_mpg_f\ves_mpg_fem_pm.anims
+  - entity: ep1\characters\entities\player\photo_mode\player_wa_photomode_ep131m.ent
+    set: vesna_mpg_f\ves_mpg_fem_pm.anims
+  - entity: ep1\characters\entities\player\photo_mode\player_wa_photomode_ep132m.ent
+    set: vesna_mpg_f\ves_mpg_fem_pm.anims
+  - entity: ep1\characters\entities\player\photo_mode\player_wa_photomode_ep133m.ent
+    set: vesna_mpg_f\ves_mpg_fem_pm.anims
+  - entity: ep1\characters\entities\player\photo_mode\player_wa_photomode_ep134m.ent
+    set: vesna_mpg_f\ves_mpg_fem_pm.anims
+  - entity: ep1\characters\entities\player\photo_mode\player_wa_photomode_ep141m.ent
+    set: vesna_mpg_f\ves_mpg_fem_pm.anims
+  - entity: ep1\characters\entities\player\photo_mode\player_wa_photomode_ep142m.ent
+    set: vesna_mpg_f\ves_mpg_fem_pm.anims
+  - entity: ep1\characters\entities\player\photo_mode\player_wa_photomode_ep143m.ent
+    set: vesna_mpg_f\ves_mpg_fem_pm.anims
+  - entity: ep1\characters\entities\player\photo_mode\player_wa_photomode_ep144m.ent
+    set: vesna_mpg_f\ves_mpg_fem_pm.anims
+  - entity: base\characters\entities\photomode_replacer\photomode_npc_woman_average.ent
+    set: vesna_mpg_f\ves_mpg_fem_pm.anims
+  - entity: base\characters\entities\photomode_replacer\photomode_npc_npv_fem1.ent
+    set: vesna_mpg_f\ves_mpg_fem_pm.anims
+  - entity: base\characters\entities\photomode_replacer\photomode_npc_npv_fem2.ent
+    set: vesna_mpg_f\ves_mpg_fem_pm.anims
+  - entity: base\characters\entities\photomode_replacer\photomode_npc_man_big.ent
+    set: vesna_mpg_m\ves_mpg_male_pm.anims
+  - entity: base\characters\entities\photomode_replacer\photomode_npc_npv_big1.ent
+    set: vesna_mpg_m\ves_mpg_male_pm.anims
+  - entity: base\characters\entities\photomode_replacer\photomode_npc_npv_big1.ent
+    set: vesna_mpg_m\ves_mpg_male_pm.anims
+  - entity: base\characters\entities\player\photo_mode\river_ward\river_photomode.ent
+    set: vesna_mpg_m\ves_mpg_male_pm.anims
+  - entity: base\characters\entities\player\photo_mode\jackie_welles\jackie_photomode.ent
+    set: vesna_mpg_m\ves_mpg_male_pm.anims
+  - entity: ep1\characters\entities\player\photo_mode\solomon_reed\reed_photomode.ent
+    set: vesna_mpg_m\ves_mpg_male_pm.anims
+  - entity: ep1\characters\entities\player\photo_mode\kurt\kurt_photomode.ent
+    set: vesna_mpg_m\ves_mpg_male_pm.anims
+  - entity: base\characters\entities\player\photo_mode\judy_alvarez\judy_photomode.ent
+    set: vesna_mpg_f\ves_mpg_fem_pm.anims
+  - entity: base\characters\entities\player\photo_mode\panam_palmer\panam_photomode.ent
+    set: vesna_mpg_f\ves_mpg_fem_pm.anims
+  - entity: base\characters\entities\player\photo_mode\rogue_amendiares\old_rogue_photomode.ent
+    set: vesna_mpg_f\ves_mpg_fem_pm.anims
+  - entity: base\characters\entities\player\photo_mode\rogue_amendiares\young_rogue_photomode.ent
+    set: vesna_mpg_f\ves_mpg_fem_pm.anims
+  - entity: base\characters\entities\player\photo_mode\alt_cunningham\alt_photomode.ent
+    set: vesna_mpg_f\ves_mpg_fem_pm.anims
+  - entity: base\characters\entities\player\photo_mode\evelyn_parker\evelyn_photomode.ent
+    set: vesna_mpg_f\ves_mpg_fem_pm.anims
+  - entity: base\characters\entities\player\photo_mode\hanako_arasaka\hanako_photomode.ent
+    set: vesna_mpg_f\ves_mpg_fem_pm.anims
+  - entity: base\characters\entities\player\photo_mode\lizzy_wizzy\lizzy_photomode.ent
+    set: vesna_mpg_f\ves_mpg_fem_pm.anims
+  - entity: base\characters\entities\player\photo_mode\meredith_stout\meredith_photomode.ent
+    set: vesna_mpg_f\ves_mpg_fem_pm.anims
+  - entity: base\characters\entities\player\photo_mode\blue_moon\bmuc_photomode.ent
+    set: vesna_mpg_f\ves_mpg_fem_pm.anims
+  - entity: base\characters\entities\player\photo_mode\purple_force\pfuc_photomode.ent
+    set: vesna_mpg_f\ves_mpg_fem_pm.anims
+  - entity: base\characters\entities\player\photo_mode\red_menace\rmuc_photomode.ent
+    set: vesna_mpg_f\ves_mpg_fem_pm.anims
+  - entity: ep1\characters\entities\player\photo_mode\songbird\songbird_photomode.ent
+    set: vesna_mpg_f\ves_mpg_fem_pm.anims
+  - entity: ep1\characters\entities\player\photo_mode\myers\myers_photomode.ent
+    set: vesna_mpg_f\ves_mpg_fem_pm.anims
+  - entity: photomode_wa.ent
+    set: vesna_mpg_f\ves_mpg_fem_pm.anims
+  - entity: photomode_mb.ent
+    set: vesna_mpg_m\ves_mpg_male_pm.anims
+
+localization:
+  onscreens:
+    en-us: vesna_mpg_f\ves_mpg_local.json

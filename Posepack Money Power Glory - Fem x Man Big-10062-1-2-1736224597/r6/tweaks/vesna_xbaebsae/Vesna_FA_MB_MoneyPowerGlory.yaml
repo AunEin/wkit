@@ -1,0 +1,755 @@
+#===============================================
+# Money Power Glory Pose Pack
+# by Vesna
+#===============================================
+
+PhotoModePoseCategories.HOV_MPG_POSES: 
+  $base: PhotoModePoseCategories.idleCategory
+  categoryName: PhotoModePoseCategories.HOV_MPG_POSES
+  displayName: hov_mpg_pose_pack_name
+
+photo_mode.character.poseCategories:
+  - !append-once PhotoModePoseCategories.HOV_MPG_POSES 
+
+
+PhotoModePoses.ves_mpg_1:
+  $base: PhotoModePoses.idle_stand_01
+  acceptedWeaponConfig: POSE_HIDE_WEAPON
+  animationName: ves_mpg_1
+  animationTime: 0
+  category: PhotoModePoseCategories.HOV_MPG_POSES
+  displayName: My Strange Addiction
+        
+PhotoModePoses.ves_mpg_2:
+  $base: PhotoModePoses.idle_stand_01
+  acceptedWeaponConfig: POSE_HIDE_WEAPON
+  animationName: ves_mpg_2
+  animationTime: 0
+  category: PhotoModePoseCategories.HOV_MPG_POSES
+  displayName: R U Mine?
+        
+PhotoModePoses.ves_mpg_3:
+  $base: PhotoModePoses.idle_stand_01
+  acceptedWeaponConfig: POSE_HIDE_WEAPON
+  animationName: ves_mpg_3
+  animationTime: 0
+  category: PhotoModePoseCategories.HOV_MPG_POSES
+  displayName: I Come With Knives
+        
+PhotoModePoses.ves_mpg_4:
+  $base: PhotoModePoses.idle_stand_01
+  acceptedWeaponConfig: POSE_HIDE_WEAPON
+  animationName: ves_mpg_4
+  animationTime: 0
+  category: PhotoModePoseCategories.HOV_MPG_POSES
+  displayName: Du riechst so gut
+        
+PhotoModePoses.ves_mpg_5:
+  $base: PhotoModePoses.idle_stand_01
+  acceptedWeaponConfig: POSE_HIDE_WEAPON
+  animationName: ves_mpg_5
+  animationTime: 0
+  category: PhotoModePoseCategories.HOV_MPG_POSES
+  displayName: Bite of God
+        
+PhotoModePoses.ves_mpg_6:
+  $base: PhotoModePoses.idle_stand_01
+  acceptedWeaponConfig: POSE_HIDE_WEAPON
+  animationName: ves_mpg_6
+  animationTime: 0
+  category: PhotoModePoseCategories.HOV_MPG_POSES
+  displayName: You should see me in a Crown
+        
+PhotoModePoses.ves_mpg_7:
+  $base: PhotoModePoses.idle_stand_01
+  acceptedWeaponConfig: POSE_HIDE_WEAPON
+  animationName: ves_mpg_7
+  animationTime: 0
+  category: PhotoModePoseCategories.HOV_MPG_POSES
+  displayName: Paint The Town Red
+        
+PhotoModePoses.ves_mpg_8:
+  $base: PhotoModePoses.idle_stand_01
+  acceptedWeaponConfig: POSE_HIDE_WEAPON
+  animationName: ves_mpg_8
+  animationTime: 0
+  category: PhotoModePoseCategories.HOV_MPG_POSES
+  displayName: Ocean Eyes
+        
+PhotoModePoses.ves_mpg_9:
+  $base: PhotoModePoses.idle_stand_01
+  acceptedWeaponConfig: POSE_HIDE_WEAPON
+  animationName: ves_mpg_9
+  animationTime: 0
+  category: PhotoModePoseCategories.HOV_MPG_POSES
+  displayName: Kiss me in the D-A-R-K
+        
+PhotoModePoses.ves_mpg_10:
+  $base: PhotoModePoses.idle_stand_01
+  acceptedWeaponConfig: POSE_HIDE_WEAPON
+  animationName: ves_mpg_10
+  animationTime: 0
+  category: PhotoModePoseCategories.HOV_MPG_POSES
+  displayName: Million Dollar Man
+        
+PhotoModePoses.ves_mpg_11:
+  $base: PhotoModePoses.idle_stand_01
+  acceptedWeaponConfig: POSE_HIDE_WEAPON
+  animationName: ves_mpg_11
+  animationTime: 0
+  category: PhotoModePoseCategories.HOV_MPG_POSES
+  displayName: Together, to be
+        
+PhotoModePoses.ves_mpg_12:
+  $base: PhotoModePoses.idle_stand_01
+  acceptedWeaponConfig: POSE_HIDE_WEAPON
+  animationName: ves_mpg_12
+  animationTime: 0
+  category: PhotoModePoseCategories.HOV_MPG_POSES
+  displayName: Lust for a Vampyr
+        
+PhotoModePoses.ves_mpg_13:
+  $base: PhotoModePoses.idle_stand_01
+  acceptedWeaponConfig: POSE_HIDE_WEAPON
+  animationName: ves_mpg_13
+  animationTime: 0
+  category: PhotoModePoseCategories.HOV_MPG_POSES
+  displayName: Burning Desire
+        
+PhotoModePoses.ves_mpg_14:
+  $base: PhotoModePoses.idle_stand_01
+  acceptedWeaponConfig: POSE_HIDE_WEAPON
+  animationName: ves_mpg_14
+  animationTime: 0
+  category: PhotoModePoseCategories.HOV_MPG_POSES
+  displayName: Personal Jesus
+        
+PhotoModePoses.ves_mpg_15:
+  $base: PhotoModePoses.idle_stand_01
+  acceptedWeaponConfig: POSE_HIDE_WEAPON
+  animationName: ves_mpg_15
+  animationTime: 0
+  category: PhotoModePoseCategories.HOV_MPG_POSES
+  displayName: An Angel's kiss in spring
+        
+PhotoModePoses.ves_mpg_16:
+  $base: PhotoModePoses.idle_stand_01
+  acceptedWeaponConfig: POSE_HIDE_WEAPON
+  animationName: ves_mpg_16
+  animationTime: 0
+  category: PhotoModePoseCategories.HOV_MPG_POSES
+  displayName: Him & I
+        
+PhotoModePoses.ves_mpg_17:
+  $base: PhotoModePoses.idle_stand_01
+  acceptedWeaponConfig: POSE_HIDE_WEAPON
+  animationName: ves_mpg_17
+  animationTime: 0
+  category: PhotoModePoseCategories.HOV_MPG_POSES
+  displayName: Love me tender
+        
+PhotoModePoses.ves_mpg_18:
+  $base: PhotoModePoses.idle_stand_01
+  acceptedWeaponConfig: POSE_HIDE_WEAPON
+  animationName: ves_mpg_18
+  animationTime: 0
+  category: PhotoModePoseCategories.HOV_MPG_POSES
+  displayName: Happy Together
+        
+PhotoModePoses.ves_mpg_19:
+  $base: PhotoModePoses.idle_stand_01
+  acceptedWeaponConfig: POSE_HIDE_WEAPON
+  animationName: ves_mpg_19
+  animationTime: 0
+  category: PhotoModePoseCategories.HOV_MPG_POSES
+  displayName: Night Vision
+        
+PhotoModePoses.ves_mpg_20:
+  $base: PhotoModePoses.idle_stand_01
+  acceptedWeaponConfig: POSE_HIDE_WEAPON
+  animationName: ves_mpg_20
+  animationTime: 0
+  category: PhotoModePoseCategories.HOV_MPG_POSES
+  displayName: You can be the Boss
+        
+PhotoModePoses.ves_mpg_21:
+  $base: PhotoModePoses.idle_stand_01
+  acceptedWeaponConfig: POSE_HIDE_WEAPON
+  animationName: ves_mpg_21
+  animationTime: 0
+  category: PhotoModePoseCategories.HOV_MPG_POSES
+  displayName: Gods & Monsters
+        
+PhotoModePoses.ves_mpg_22:
+  $base: PhotoModePoses.idle_stand_01
+  acceptedWeaponConfig: POSE_HIDE_WEAPON
+  animationName: ves_mpg_22
+  animationTime: 0
+  category: PhotoModePoseCategories.HOV_MPG_POSES
+  displayName: I wanna be yours
+        
+PhotoModePoses.ves_mpg_23:
+  $base: PhotoModePoses.idle_stand_01
+  acceptedWeaponConfig: POSE_HIDE_WEAPON
+  animationName: ves_mpg_23
+  animationTime: 0
+  category: PhotoModePoseCategories.HOV_MPG_POSES
+  displayName: Automatic Love
+        
+PhotoModePoses.ves_mpg_24:
+  $base: PhotoModePoses.idle_stand_01
+  acceptedWeaponConfig: POSE_HIDE_WEAPON
+  animationName: ves_mpg_24
+  animationTime: 0
+  category: PhotoModePoseCategories.HOV_MPG_POSES
+  displayName: Daddy Issues
+        
+PhotoModePoses.ves_mpg_25:
+  $base: PhotoModePoses.idle_stand_01
+  acceptedWeaponConfig: POSE_HIDE_WEAPON
+  animationName: ves_mpg_25
+  animationTime: 0
+  category: PhotoModePoseCategories.HOV_MPG_POSES
+  displayName: Earned It
+        
+
+
+photo_mode.character.femalePoses:
+    - !append-once PhotoModePoses.ves_mpg_1
+    - !append-once PhotoModePoses.ves_mpg_2
+    - !append-once PhotoModePoses.ves_mpg_3
+    - !append-once PhotoModePoses.ves_mpg_4
+    - !append-once PhotoModePoses.ves_mpg_5
+    - !append-once PhotoModePoses.ves_mpg_6
+    - !append-once PhotoModePoses.ves_mpg_7
+    - !append-once PhotoModePoses.ves_mpg_8
+    - !append-once PhotoModePoses.ves_mpg_9
+    - !append-once PhotoModePoses.ves_mpg_10
+    - !append-once PhotoModePoses.ves_mpg_11
+    - !append-once PhotoModePoses.ves_mpg_12
+    - !append-once PhotoModePoses.ves_mpg_13
+    - !append-once PhotoModePoses.ves_mpg_14
+    - !append-once PhotoModePoses.ves_mpg_15
+    - !append-once PhotoModePoses.ves_mpg_16
+    - !append-once PhotoModePoses.ves_mpg_17
+    - !append-once PhotoModePoses.ves_mpg_18
+    - !append-once PhotoModePoses.ves_mpg_19
+    - !append-once PhotoModePoses.ves_mpg_20
+    - !append-once PhotoModePoses.ves_mpg_21
+    - !append-once PhotoModePoses.ves_mpg_22
+    - !append-once PhotoModePoses.ves_mpg_23
+    - !append-once PhotoModePoses.ves_mpg_24
+    - !append-once PhotoModePoses.ves_mpg_25
+
+photo_mode.character.quadrupedPoses:
+    - !append-once PhotoModePoses.ves_mpg_1
+    - !append-once PhotoModePoses.ves_mpg_2
+    - !append-once PhotoModePoses.ves_mpg_3
+    - !append-once PhotoModePoses.ves_mpg_4
+    - !append-once PhotoModePoses.ves_mpg_5
+    - !append-once PhotoModePoses.ves_mpg_6
+    - !append-once PhotoModePoses.ves_mpg_7
+    - !append-once PhotoModePoses.ves_mpg_8
+    - !append-once PhotoModePoses.ves_mpg_9
+    - !append-once PhotoModePoses.ves_mpg_10
+    - !append-once PhotoModePoses.ves_mpg_11
+    - !append-once PhotoModePoses.ves_mpg_12
+    - !append-once PhotoModePoses.ves_mpg_13
+    - !append-once PhotoModePoses.ves_mpg_14
+    - !append-once PhotoModePoses.ves_mpg_15
+    - !append-once PhotoModePoses.ves_mpg_16
+    - !append-once PhotoModePoses.ves_mpg_17
+    - !append-once PhotoModePoses.ves_mpg_18
+    - !append-once PhotoModePoses.ves_mpg_19
+    - !append-once PhotoModePoses.ves_mpg_20
+    - !append-once PhotoModePoses.ves_mpg_21
+    - !append-once PhotoModePoses.ves_mpg_22
+    - !append-once PhotoModePoses.ves_mpg_23
+    - !append-once PhotoModePoses.ves_mpg_24
+    - !append-once PhotoModePoses.ves_mpg_25
+
+photo_mode.character.riverPoses:
+    - !append-once PhotoModePoses.ves_mpg_1
+    - !append-once PhotoModePoses.ves_mpg_2
+    - !append-once PhotoModePoses.ves_mpg_3
+    - !append-once PhotoModePoses.ves_mpg_4
+    - !append-once PhotoModePoses.ves_mpg_5
+    - !append-once PhotoModePoses.ves_mpg_6
+    - !append-once PhotoModePoses.ves_mpg_7
+    - !append-once PhotoModePoses.ves_mpg_8
+    - !append-once PhotoModePoses.ves_mpg_9
+    - !append-once PhotoModePoses.ves_mpg_10
+    - !append-once PhotoModePoses.ves_mpg_11
+    - !append-once PhotoModePoses.ves_mpg_12
+    - !append-once PhotoModePoses.ves_mpg_13
+    - !append-once PhotoModePoses.ves_mpg_14
+    - !append-once PhotoModePoses.ves_mpg_15
+    - !append-once PhotoModePoses.ves_mpg_16
+    - !append-once PhotoModePoses.ves_mpg_17
+    - !append-once PhotoModePoses.ves_mpg_18
+    - !append-once PhotoModePoses.ves_mpg_19
+    - !append-once PhotoModePoses.ves_mpg_20
+    - !append-once PhotoModePoses.ves_mpg_21
+    - !append-once PhotoModePoses.ves_mpg_22
+    - !append-once PhotoModePoses.ves_mpg_23
+    - !append-once PhotoModePoses.ves_mpg_24
+    - !append-once PhotoModePoses.ves_mpg_25
+
+photo_mode.character.jackiePoses:
+    - !append-once PhotoModePoses.ves_mpg_1
+    - !append-once PhotoModePoses.ves_mpg_2
+    - !append-once PhotoModePoses.ves_mpg_3
+    - !append-once PhotoModePoses.ves_mpg_4
+    - !append-once PhotoModePoses.ves_mpg_5
+    - !append-once PhotoModePoses.ves_mpg_6
+    - !append-once PhotoModePoses.ves_mpg_7
+    - !append-once PhotoModePoses.ves_mpg_8
+    - !append-once PhotoModePoses.ves_mpg_9
+    - !append-once PhotoModePoses.ves_mpg_10
+    - !append-once PhotoModePoses.ves_mpg_11
+    - !append-once PhotoModePoses.ves_mpg_12
+    - !append-once PhotoModePoses.ves_mpg_13
+    - !append-once PhotoModePoses.ves_mpg_14
+    - !append-once PhotoModePoses.ves_mpg_15
+    - !append-once PhotoModePoses.ves_mpg_16
+    - !append-once PhotoModePoses.ves_mpg_17
+    - !append-once PhotoModePoses.ves_mpg_18
+    - !append-once PhotoModePoses.ves_mpg_19
+    - !append-once PhotoModePoses.ves_mpg_20
+    - !append-once PhotoModePoses.ves_mpg_21
+    - !append-once PhotoModePoses.ves_mpg_22
+    - !append-once PhotoModePoses.ves_mpg_23
+    - !append-once PhotoModePoses.ves_mpg_24
+    - !append-once PhotoModePoses.ves_mpg_25
+
+photo_mode.character.reedPoses:
+    - !append-once PhotoModePoses.ves_mpg_1
+    - !append-once PhotoModePoses.ves_mpg_2
+    - !append-once PhotoModePoses.ves_mpg_3
+    - !append-once PhotoModePoses.ves_mpg_4
+    - !append-once PhotoModePoses.ves_mpg_5
+    - !append-once PhotoModePoses.ves_mpg_6
+    - !append-once PhotoModePoses.ves_mpg_7
+    - !append-once PhotoModePoses.ves_mpg_8
+    - !append-once PhotoModePoses.ves_mpg_9
+    - !append-once PhotoModePoses.ves_mpg_10
+    - !append-once PhotoModePoses.ves_mpg_11
+    - !append-once PhotoModePoses.ves_mpg_12
+    - !append-once PhotoModePoses.ves_mpg_13
+    - !append-once PhotoModePoses.ves_mpg_14
+    - !append-once PhotoModePoses.ves_mpg_15
+    - !append-once PhotoModePoses.ves_mpg_16
+    - !append-once PhotoModePoses.ves_mpg_17
+    - !append-once PhotoModePoses.ves_mpg_18
+    - !append-once PhotoModePoses.ves_mpg_19
+    - !append-once PhotoModePoses.ves_mpg_20
+    - !append-once PhotoModePoses.ves_mpg_21
+    - !append-once PhotoModePoses.ves_mpg_22
+    - !append-once PhotoModePoses.ves_mpg_23
+    - !append-once PhotoModePoses.ves_mpg_24
+    - !append-once PhotoModePoses.ves_mpg_25
+
+photo_mode.character.kurtPoses:
+    - !append-once PhotoModePoses.ves_mpg_1
+    - !append-once PhotoModePoses.ves_mpg_2
+    - !append-once PhotoModePoses.ves_mpg_3
+    - !append-once PhotoModePoses.ves_mpg_4
+    - !append-once PhotoModePoses.ves_mpg_5
+    - !append-once PhotoModePoses.ves_mpg_6
+    - !append-once PhotoModePoses.ves_mpg_7
+    - !append-once PhotoModePoses.ves_mpg_8
+    - !append-once PhotoModePoses.ves_mpg_9
+    - !append-once PhotoModePoses.ves_mpg_10
+    - !append-once PhotoModePoses.ves_mpg_11
+    - !append-once PhotoModePoses.ves_mpg_12
+    - !append-once PhotoModePoses.ves_mpg_13
+    - !append-once PhotoModePoses.ves_mpg_14
+    - !append-once PhotoModePoses.ves_mpg_15
+    - !append-once PhotoModePoses.ves_mpg_16
+    - !append-once PhotoModePoses.ves_mpg_17
+    - !append-once PhotoModePoses.ves_mpg_18
+    - !append-once PhotoModePoses.ves_mpg_19
+    - !append-once PhotoModePoses.ves_mpg_20
+    - !append-once PhotoModePoses.ves_mpg_21
+    - !append-once PhotoModePoses.ves_mpg_22
+    - !append-once PhotoModePoses.ves_mpg_23
+    - !append-once PhotoModePoses.ves_mpg_24
+    - !append-once PhotoModePoses.ves_mpg_25
+
+photo_mode.character.judyPoses:
+    - !append-once PhotoModePoses.ves_mpg_1
+    - !append-once PhotoModePoses.ves_mpg_2
+    - !append-once PhotoModePoses.ves_mpg_3
+    - !append-once PhotoModePoses.ves_mpg_4
+    - !append-once PhotoModePoses.ves_mpg_5
+    - !append-once PhotoModePoses.ves_mpg_6
+    - !append-once PhotoModePoses.ves_mpg_7
+    - !append-once PhotoModePoses.ves_mpg_8
+    - !append-once PhotoModePoses.ves_mpg_9
+    - !append-once PhotoModePoses.ves_mpg_10
+    - !append-once PhotoModePoses.ves_mpg_11
+    - !append-once PhotoModePoses.ves_mpg_12
+    - !append-once PhotoModePoses.ves_mpg_13
+    - !append-once PhotoModePoses.ves_mpg_14
+    - !append-once PhotoModePoses.ves_mpg_15
+    - !append-once PhotoModePoses.ves_mpg_16
+    - !append-once PhotoModePoses.ves_mpg_17
+    - !append-once PhotoModePoses.ves_mpg_18
+    - !append-once PhotoModePoses.ves_mpg_19
+    - !append-once PhotoModePoses.ves_mpg_20
+    - !append-once PhotoModePoses.ves_mpg_21
+    - !append-once PhotoModePoses.ves_mpg_22
+    - !append-once PhotoModePoses.ves_mpg_23
+    - !append-once PhotoModePoses.ves_mpg_24
+    - !append-once PhotoModePoses.ves_mpg_25
+
+photo_mode.character.panamPoses:
+    - !append-once PhotoModePoses.ves_mpg_1
+    - !append-once PhotoModePoses.ves_mpg_2
+    - !append-once PhotoModePoses.ves_mpg_3
+    - !append-once PhotoModePoses.ves_mpg_4
+    - !append-once PhotoModePoses.ves_mpg_5
+    - !append-once PhotoModePoses.ves_mpg_6
+    - !append-once PhotoModePoses.ves_mpg_7
+    - !append-once PhotoModePoses.ves_mpg_8
+    - !append-once PhotoModePoses.ves_mpg_9
+    - !append-once PhotoModePoses.ves_mpg_10
+    - !append-once PhotoModePoses.ves_mpg_11
+    - !append-once PhotoModePoses.ves_mpg_12
+    - !append-once PhotoModePoses.ves_mpg_13
+    - !append-once PhotoModePoses.ves_mpg_14
+    - !append-once PhotoModePoses.ves_mpg_15
+    - !append-once PhotoModePoses.ves_mpg_16
+    - !append-once PhotoModePoses.ves_mpg_17
+    - !append-once PhotoModePoses.ves_mpg_18
+    - !append-once PhotoModePoses.ves_mpg_19
+    - !append-once PhotoModePoses.ves_mpg_20
+    - !append-once PhotoModePoses.ves_mpg_21
+    - !append-once PhotoModePoses.ves_mpg_22
+    - !append-once PhotoModePoses.ves_mpg_23
+    - !append-once PhotoModePoses.ves_mpg_24
+    - !append-once PhotoModePoses.ves_mpg_25
+
+photo_mode.character.rogueoldPoses:
+    - !append-once PhotoModePoses.ves_mpg_1
+    - !append-once PhotoModePoses.ves_mpg_2
+    - !append-once PhotoModePoses.ves_mpg_3
+    - !append-once PhotoModePoses.ves_mpg_4
+    - !append-once PhotoModePoses.ves_mpg_5
+    - !append-once PhotoModePoses.ves_mpg_6
+    - !append-once PhotoModePoses.ves_mpg_7
+    - !append-once PhotoModePoses.ves_mpg_8
+    - !append-once PhotoModePoses.ves_mpg_9
+    - !append-once PhotoModePoses.ves_mpg_10
+    - !append-once PhotoModePoses.ves_mpg_11
+    - !append-once PhotoModePoses.ves_mpg_12
+    - !append-once PhotoModePoses.ves_mpg_13
+    - !append-once PhotoModePoses.ves_mpg_14
+    - !append-once PhotoModePoses.ves_mpg_15
+    - !append-once PhotoModePoses.ves_mpg_16
+    - !append-once PhotoModePoses.ves_mpg_17
+    - !append-once PhotoModePoses.ves_mpg_18
+    - !append-once PhotoModePoses.ves_mpg_19
+    - !append-once PhotoModePoses.ves_mpg_20
+    - !append-once PhotoModePoses.ves_mpg_21
+    - !append-once PhotoModePoses.ves_mpg_22
+    - !append-once PhotoModePoses.ves_mpg_23
+    - !append-once PhotoModePoses.ves_mpg_24
+    - !append-once PhotoModePoses.ves_mpg_25
+
+photo_mode.character.rogueyoungPoses:
+    - !append-once PhotoModePoses.ves_mpg_1
+    - !append-once PhotoModePoses.ves_mpg_2
+    - !append-once PhotoModePoses.ves_mpg_3
+    - !append-once PhotoModePoses.ves_mpg_4
+    - !append-once PhotoModePoses.ves_mpg_5
+    - !append-once PhotoModePoses.ves_mpg_6
+    - !append-once PhotoModePoses.ves_mpg_7
+    - !append-once PhotoModePoses.ves_mpg_8
+    - !append-once PhotoModePoses.ves_mpg_9
+    - !append-once PhotoModePoses.ves_mpg_10
+    - !append-once PhotoModePoses.ves_mpg_11
+    - !append-once PhotoModePoses.ves_mpg_12
+    - !append-once PhotoModePoses.ves_mpg_13
+    - !append-once PhotoModePoses.ves_mpg_14
+    - !append-once PhotoModePoses.ves_mpg_15
+    - !append-once PhotoModePoses.ves_mpg_16
+    - !append-once PhotoModePoses.ves_mpg_17
+    - !append-once PhotoModePoses.ves_mpg_18
+    - !append-once PhotoModePoses.ves_mpg_19
+    - !append-once PhotoModePoses.ves_mpg_20
+    - !append-once PhotoModePoses.ves_mpg_21
+    - !append-once PhotoModePoses.ves_mpg_22
+    - !append-once PhotoModePoses.ves_mpg_23
+    - !append-once PhotoModePoses.ves_mpg_24
+    - !append-once PhotoModePoses.ves_mpg_25
+
+photo_mode.character.altPoses:
+    - !append-once PhotoModePoses.ves_mpg_1
+    - !append-once PhotoModePoses.ves_mpg_2
+    - !append-once PhotoModePoses.ves_mpg_3
+    - !append-once PhotoModePoses.ves_mpg_4
+    - !append-once PhotoModePoses.ves_mpg_5
+    - !append-once PhotoModePoses.ves_mpg_6
+    - !append-once PhotoModePoses.ves_mpg_7
+    - !append-once PhotoModePoses.ves_mpg_8
+    - !append-once PhotoModePoses.ves_mpg_9
+    - !append-once PhotoModePoses.ves_mpg_10
+    - !append-once PhotoModePoses.ves_mpg_11
+    - !append-once PhotoModePoses.ves_mpg_12
+    - !append-once PhotoModePoses.ves_mpg_13
+    - !append-once PhotoModePoses.ves_mpg_14
+    - !append-once PhotoModePoses.ves_mpg_15
+    - !append-once PhotoModePoses.ves_mpg_16
+    - !append-once PhotoModePoses.ves_mpg_17
+    - !append-once PhotoModePoses.ves_mpg_18
+    - !append-once PhotoModePoses.ves_mpg_19
+    - !append-once PhotoModePoses.ves_mpg_20
+    - !append-once PhotoModePoses.ves_mpg_21
+    - !append-once PhotoModePoses.ves_mpg_22
+    - !append-once PhotoModePoses.ves_mpg_23
+    - !append-once PhotoModePoses.ves_mpg_24
+    - !append-once PhotoModePoses.ves_mpg_25
+
+photo_mode.character.evelynPoses:
+    - !append-once PhotoModePoses.ves_mpg_1
+    - !append-once PhotoModePoses.ves_mpg_2
+    - !append-once PhotoModePoses.ves_mpg_3
+    - !append-once PhotoModePoses.ves_mpg_4
+    - !append-once PhotoModePoses.ves_mpg_5
+    - !append-once PhotoModePoses.ves_mpg_6
+    - !append-once PhotoModePoses.ves_mpg_7
+    - !append-once PhotoModePoses.ves_mpg_8
+    - !append-once PhotoModePoses.ves_mpg_9
+    - !append-once PhotoModePoses.ves_mpg_10
+    - !append-once PhotoModePoses.ves_mpg_11
+    - !append-once PhotoModePoses.ves_mpg_12
+    - !append-once PhotoModePoses.ves_mpg_13
+    - !append-once PhotoModePoses.ves_mpg_14
+    - !append-once PhotoModePoses.ves_mpg_15
+    - !append-once PhotoModePoses.ves_mpg_16
+    - !append-once PhotoModePoses.ves_mpg_17
+    - !append-once PhotoModePoses.ves_mpg_18
+    - !append-once PhotoModePoses.ves_mpg_19
+    - !append-once PhotoModePoses.ves_mpg_20
+    - !append-once PhotoModePoses.ves_mpg_21
+    - !append-once PhotoModePoses.ves_mpg_22
+    - !append-once PhotoModePoses.ves_mpg_23
+    - !append-once PhotoModePoses.ves_mpg_24
+    - !append-once PhotoModePoses.ves_mpg_25
+
+photo_mode.character.hanakoPoses:
+    - !append-once PhotoModePoses.ves_mpg_1
+    - !append-once PhotoModePoses.ves_mpg_2
+    - !append-once PhotoModePoses.ves_mpg_3
+    - !append-once PhotoModePoses.ves_mpg_4
+    - !append-once PhotoModePoses.ves_mpg_5
+    - !append-once PhotoModePoses.ves_mpg_6
+    - !append-once PhotoModePoses.ves_mpg_7
+    - !append-once PhotoModePoses.ves_mpg_8
+    - !append-once PhotoModePoses.ves_mpg_9
+    - !append-once PhotoModePoses.ves_mpg_10
+    - !append-once PhotoModePoses.ves_mpg_11
+    - !append-once PhotoModePoses.ves_mpg_12
+    - !append-once PhotoModePoses.ves_mpg_13
+    - !append-once PhotoModePoses.ves_mpg_14
+    - !append-once PhotoModePoses.ves_mpg_15
+    - !append-once PhotoModePoses.ves_mpg_16
+    - !append-once PhotoModePoses.ves_mpg_17
+    - !append-once PhotoModePoses.ves_mpg_18
+    - !append-once PhotoModePoses.ves_mpg_19
+    - !append-once PhotoModePoses.ves_mpg_20
+    - !append-once PhotoModePoses.ves_mpg_21
+    - !append-once PhotoModePoses.ves_mpg_22
+    - !append-once PhotoModePoses.ves_mpg_23
+    - !append-once PhotoModePoses.ves_mpg_24
+    - !append-once PhotoModePoses.ves_mpg_25
+
+photo_mode.character.lizzyPoses:
+    - !append-once PhotoModePoses.ves_mpg_1
+    - !append-once PhotoModePoses.ves_mpg_2
+    - !append-once PhotoModePoses.ves_mpg_3
+    - !append-once PhotoModePoses.ves_mpg_4
+    - !append-once PhotoModePoses.ves_mpg_5
+    - !append-once PhotoModePoses.ves_mpg_6
+    - !append-once PhotoModePoses.ves_mpg_7
+    - !append-once PhotoModePoses.ves_mpg_8
+    - !append-once PhotoModePoses.ves_mpg_9
+    - !append-once PhotoModePoses.ves_mpg_10
+    - !append-once PhotoModePoses.ves_mpg_11
+    - !append-once PhotoModePoses.ves_mpg_12
+    - !append-once PhotoModePoses.ves_mpg_13
+    - !append-once PhotoModePoses.ves_mpg_14
+    - !append-once PhotoModePoses.ves_mpg_15
+    - !append-once PhotoModePoses.ves_mpg_16
+    - !append-once PhotoModePoses.ves_mpg_17
+    - !append-once PhotoModePoses.ves_mpg_18
+    - !append-once PhotoModePoses.ves_mpg_19
+    - !append-once PhotoModePoses.ves_mpg_20
+    - !append-once PhotoModePoses.ves_mpg_21
+    - !append-once PhotoModePoses.ves_mpg_22
+    - !append-once PhotoModePoses.ves_mpg_23
+    - !append-once PhotoModePoses.ves_mpg_24
+    - !append-once PhotoModePoses.ves_mpg_25
+
+photo_mode.character.meredithPoses:
+    - !append-once PhotoModePoses.ves_mpg_1
+    - !append-once PhotoModePoses.ves_mpg_2
+    - !append-once PhotoModePoses.ves_mpg_3
+    - !append-once PhotoModePoses.ves_mpg_4
+    - !append-once PhotoModePoses.ves_mpg_5
+    - !append-once PhotoModePoses.ves_mpg_6
+    - !append-once PhotoModePoses.ves_mpg_7
+    - !append-once PhotoModePoses.ves_mpg_8
+    - !append-once PhotoModePoses.ves_mpg_9
+    - !append-once PhotoModePoses.ves_mpg_10
+    - !append-once PhotoModePoses.ves_mpg_11
+    - !append-once PhotoModePoses.ves_mpg_12
+    - !append-once PhotoModePoses.ves_mpg_13
+    - !append-once PhotoModePoses.ves_mpg_14
+    - !append-once PhotoModePoses.ves_mpg_15
+    - !append-once PhotoModePoses.ves_mpg_16
+    - !append-once PhotoModePoses.ves_mpg_17
+    - !append-once PhotoModePoses.ves_mpg_18
+    - !append-once PhotoModePoses.ves_mpg_19
+    - !append-once PhotoModePoses.ves_mpg_20
+    - !append-once PhotoModePoses.ves_mpg_21
+    - !append-once PhotoModePoses.ves_mpg_22
+    - !append-once PhotoModePoses.ves_mpg_23
+    - !append-once PhotoModePoses.ves_mpg_24
+    - !append-once PhotoModePoses.ves_mpg_25
+
+photo_mode.character.bluemoonPoses:
+    - !append-once PhotoModePoses.ves_mpg_1
+    - !append-once PhotoModePoses.ves_mpg_2
+    - !append-once PhotoModePoses.ves_mpg_3
+    - !append-once PhotoModePoses.ves_mpg_4
+    - !append-once PhotoModePoses.ves_mpg_5
+    - !append-once PhotoModePoses.ves_mpg_6
+    - !append-once PhotoModePoses.ves_mpg_7
+    - !append-once PhotoModePoses.ves_mpg_8
+    - !append-once PhotoModePoses.ves_mpg_9
+    - !append-once PhotoModePoses.ves_mpg_10
+    - !append-once PhotoModePoses.ves_mpg_11
+    - !append-once PhotoModePoses.ves_mpg_12
+    - !append-once PhotoModePoses.ves_mpg_13
+    - !append-once PhotoModePoses.ves_mpg_14
+    - !append-once PhotoModePoses.ves_mpg_15
+    - !append-once PhotoModePoses.ves_mpg_16
+    - !append-once PhotoModePoses.ves_mpg_17
+    - !append-once PhotoModePoses.ves_mpg_18
+    - !append-once PhotoModePoses.ves_mpg_19
+    - !append-once PhotoModePoses.ves_mpg_20
+    - !append-once PhotoModePoses.ves_mpg_21
+    - !append-once PhotoModePoses.ves_mpg_22
+    - !append-once PhotoModePoses.ves_mpg_23
+    - !append-once PhotoModePoses.ves_mpg_24
+    - !append-once PhotoModePoses.ves_mpg_25
+
+photo_mode.character.purpleforcePoses:
+    - !append-once PhotoModePoses.ves_mpg_1
+    - !append-once PhotoModePoses.ves_mpg_2
+    - !append-once PhotoModePoses.ves_mpg_3
+    - !append-once PhotoModePoses.ves_mpg_4
+    - !append-once PhotoModePoses.ves_mpg_5
+    - !append-once PhotoModePoses.ves_mpg_6
+    - !append-once PhotoModePoses.ves_mpg_7
+    - !append-once PhotoModePoses.ves_mpg_8
+    - !append-once PhotoModePoses.ves_mpg_9
+    - !append-once PhotoModePoses.ves_mpg_10
+    - !append-once PhotoModePoses.ves_mpg_11
+    - !append-once PhotoModePoses.ves_mpg_12
+    - !append-once PhotoModePoses.ves_mpg_13
+    - !append-once PhotoModePoses.ves_mpg_14
+    - !append-once PhotoModePoses.ves_mpg_15
+    - !append-once PhotoModePoses.ves_mpg_16
+    - !append-once PhotoModePoses.ves_mpg_17
+    - !append-once PhotoModePoses.ves_mpg_18
+    - !append-once PhotoModePoses.ves_mpg_19
+    - !append-once PhotoModePoses.ves_mpg_20
+    - !append-once PhotoModePoses.ves_mpg_21
+    - !append-once PhotoModePoses.ves_mpg_22
+    - !append-once PhotoModePoses.ves_mpg_23
+    - !append-once PhotoModePoses.ves_mpg_24
+    - !append-once PhotoModePoses.ves_mpg_25
+
+photo_mode.character.redmenacePoses:
+    - !append-once PhotoModePoses.ves_mpg_1
+    - !append-once PhotoModePoses.ves_mpg_2
+    - !append-once PhotoModePoses.ves_mpg_3
+    - !append-once PhotoModePoses.ves_mpg_4
+    - !append-once PhotoModePoses.ves_mpg_5
+    - !append-once PhotoModePoses.ves_mpg_6
+    - !append-once PhotoModePoses.ves_mpg_7
+    - !append-once PhotoModePoses.ves_mpg_8
+    - !append-once PhotoModePoses.ves_mpg_9
+    - !append-once PhotoModePoses.ves_mpg_10
+    - !append-once PhotoModePoses.ves_mpg_11
+    - !append-once PhotoModePoses.ves_mpg_12
+    - !append-once PhotoModePoses.ves_mpg_13
+    - !append-once PhotoModePoses.ves_mpg_14
+    - !append-once PhotoModePoses.ves_mpg_15
+    - !append-once PhotoModePoses.ves_mpg_16
+    - !append-once PhotoModePoses.ves_mpg_17
+    - !append-once PhotoModePoses.ves_mpg_18
+    - !append-once PhotoModePoses.ves_mpg_19
+    - !append-once PhotoModePoses.ves_mpg_20
+    - !append-once PhotoModePoses.ves_mpg_21
+    - !append-once PhotoModePoses.ves_mpg_22
+    - !append-once PhotoModePoses.ves_mpg_23
+    - !append-once PhotoModePoses.ves_mpg_24
+    - !append-once PhotoModePoses.ves_mpg_25
+
+photo_mode.character.songbirdPoses:
+    - !append-once PhotoModePoses.ves_mpg_1
+    - !append-once PhotoModePoses.ves_mpg_2
+    - !append-once PhotoModePoses.ves_mpg_3
+    - !append-once PhotoModePoses.ves_mpg_4
+    - !append-once PhotoModePoses.ves_mpg_5
+    - !append-once PhotoModePoses.ves_mpg_6
+    - !append-once PhotoModePoses.ves_mpg_7
+    - !append-once PhotoModePoses.ves_mpg_8
+    - !append-once PhotoModePoses.ves_mpg_9
+    - !append-once PhotoModePoses.ves_mpg_10
+    - !append-once PhotoModePoses.ves_mpg_11
+    - !append-once PhotoModePoses.ves_mpg_12
+    - !append-once PhotoModePoses.ves_mpg_13
+    - !append-once PhotoModePoses.ves_mpg_14
+    - !append-once PhotoModePoses.ves_mpg_15
+    - !append-once PhotoModePoses.ves_mpg_16
+    - !append-once PhotoModePoses.ves_mpg_17
+    - !append-once PhotoModePoses.ves_mpg_18
+    - !append-once PhotoModePoses.ves_mpg_19
+    - !append-once PhotoModePoses.ves_mpg_20
+    - !append-once PhotoModePoses.ves_mpg_21
+    - !append-once PhotoModePoses.ves_mpg_22
+    - !append-once PhotoModePoses.ves_mpg_23
+    - !append-once PhotoModePoses.ves_mpg_24
+    - !append-once PhotoModePoses.ves_mpg_25
+
+photo_mode.character.myersPoses:
+    - !append-once PhotoModePoses.ves_mpg_1
+    - !append-once PhotoModePoses.ves_mpg_2
+    - !append-once PhotoModePoses.ves_mpg_3
+    - !append-once PhotoModePoses.ves_mpg_4
+    - !append-once PhotoModePoses.ves_mpg_5
+    - !append-once PhotoModePoses.ves_mpg_6
+    - !append-once PhotoModePoses.ves_mpg_7
+    - !append-once PhotoModePoses.ves_mpg_8
+    - !append-once PhotoModePoses.ves_mpg_9
+    - !append-once PhotoModePoses.ves_mpg_10
+    - !append-once PhotoModePoses.ves_mpg_11
+    - !append-once PhotoModePoses.ves_mpg_12
+    - !append-once PhotoModePoses.ves_mpg_13
+    - !append-once PhotoModePoses.ves_mpg_14
+    - !append-once PhotoModePoses.ves_mpg_15
+    - !append-once PhotoModePoses.ves_mpg_16
+    - !append-once PhotoModePoses.ves_mpg_17
+    - !append-once PhotoModePoses.ves_mpg_18
+    - !append-once PhotoModePoses.ves_mpg_19
+    - !append-once PhotoModePoses.ves_mpg_20
+    - !append-once PhotoModePoses.ves_mpg_21
+    - !append-once PhotoModePoses.ves_mpg_22
+    - !append-once PhotoModePoses.ves_mpg_23
+    - !append-once PhotoModePoses.ves_mpg_24
+    - !append-once PhotoModePoses.ves_mpg_25
