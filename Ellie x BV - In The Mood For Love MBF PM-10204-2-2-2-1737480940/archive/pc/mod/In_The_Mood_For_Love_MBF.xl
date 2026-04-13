@@ -1,0 +1,34 @@
+localization:
+  onscreens:
+    en-us: base\busyvampire\in_the_mood_for_love_mbf_pm\in_the_mood_for_love_mbf.json
+
+animations:
+  - entity: ep1\characters\entities\player\photo_mode\player_wa_photomode_ep1.ent
+    set: base\busyvampire\in_the_mood_for_love_mbf_pm\female_mbf.anims
+
+  - entity: base\characters\entities\player\photo_mode\player_wa_photomode.ent
+    set: base\busyvampire\in_the_mood_for_love_mbf_pm\female_mbf.anims
+
+  - entity: base\characters\entities\photomode_replacer\photomode_npc_man_big.ent
+    set: base\busyvampire\in_the_mood_for_love_mbf_pm\big_mbf.anims
+
+  - entity: base\characters\entities\photomode_replacer\photomode_npc_woman_average.ent
+    set: base\busyvampire\in_the_mood_for_love_mbf_pm\female_mbf.anims
+
+  - entity: base\characters\entities\photomode_replacer\photomode_npc_npv_big1.ent
+    set: base\busyvampire\in_the_mood_for_love_mbf_pm\big_mbf.anims
+
+  - entity: base\characters\entities\photomode_replacer\photomode_npc_npv_big2.ent
+    set: base\busyvampire\in_the_mood_for_love_mbf_pm\big_mbf.anims
+
+  - entity: base\characters\entities\photomode_replacer\photomode_npc_npv_fem1.ent
+    set: base\busyvampire\in_the_mood_for_love_mbf_pm\female_mbf.anims
+
+  - entity: base\characters\entities\photomode_replacer\photomode_npc_npv_fem2.ent
+    set: base\busyvampire\in_the_mood_for_love_mbf_pm\female_mbf.anims
+
+  - entity: photomode_wa.ent
+    set: base\busyvampire\in_the_mood_for_love_mbf_pm\female_mbf.anims
+
+  - entity: photomode_mb.ent
+    set: base\busyvampire\in_the_mood_for_love_mbf_pm\big_mbf.anims
