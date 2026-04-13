@@ -1,0 +1,238 @@
+PhotoModePoseCategories.InTheMoodForLoveF: 
+  $base: PhotoModePoseCategories.idleCategory
+  categoryName: PhotoModePoseCategories.InTheMoodForLoveF
+  displayName: ellie_bv_in_the_mood_for_love_f
+
+PhotoModePoseCategories.InTheMoodForLoveM: 
+  $base: PhotoModePoseCategories.idleCategory
+  categoryName: PhotoModePoseCategories.InTheMoodForLoveM
+  displayName: ellie_bv_in_the_mood_for_love_m
+
+photo_mode.character.poseCategories:
+  - !append-once PhotoModePoseCategories.InTheMoodForLoveF
+  - !append-once PhotoModePoseCategories.InTheMoodForLoveM
+
+PhotoModePoses.er_x_el_perfect_romance_m:
+  $base: PhotoModePoses.idle_stand_01
+  acceptedWeaponConfig: POSE_HIDE_WEAPON
+  animationName: er_x_el_perfect_romance_m
+  animationTime: 0
+  category: PhotoModePoseCategories.InTheMoodForLoveM
+  displayName: Eren x Ellie - Perfect Romance
+        
+PhotoModePoses.everlasting_love_m:
+  $base: PhotoModePoses.idle_stand_01
+  acceptedWeaponConfig: POSE_HIDE_WEAPON
+  animationName: everlasting_love_m
+  animationTime: 0
+  category: PhotoModePoseCategories.InTheMoodForLoveM
+  displayName: Ellie - Everlasting Love
+        
+PhotoModePoses.stand_by_me_m:
+  $base: PhotoModePoses.idle_stand_01
+  acceptedWeaponConfig: POSE_HIDE_WEAPON
+  animationName: stand_by_me_m
+  animationTime: 0
+  category: PhotoModePoseCategories.InTheMoodForLoveM
+  displayName: Ellie - Stand By Me
+        
+PhotoModePoses.talk_that_talk_m:
+  $base: PhotoModePoses.idle_stand_01
+  acceptedWeaponConfig: POSE_HIDE_WEAPON
+  animationName: talk_that_talk_m
+  animationTime: 0
+  category: PhotoModePoseCategories.InTheMoodForLoveM
+  displayName: Ellie - Talk That Talk
+        
+PhotoModePoses.warm_soul_m:
+  $base: PhotoModePoses.idle_stand_01
+  acceptedWeaponConfig: POSE_HIDE_WEAPON
+  animationName: warm_soul_m
+  animationTime: 0
+  category: PhotoModePoseCategories.InTheMoodForLoveM
+  displayName: Ellie - Warm Soul
+        
+PhotoModePoses.hold_me_close_m:
+  $base: PhotoModePoses.idle_stand_01
+  acceptedWeaponConfig: POSE_HIDE_WEAPON
+  animationName: hold_me_close_m
+  animationTime: 0
+  category: PhotoModePoseCategories.InTheMoodForLoveM
+  displayName: BV - Hold Me Close
+        
+PhotoModePoses.in_my_arms_m:
+  $base: PhotoModePoses.idle_stand_01
+  acceptedWeaponConfig: POSE_HIDE_WEAPON
+  animationName: in_my_arms_m
+  animationTime: 0
+  category: PhotoModePoseCategories.InTheMoodForLoveM
+  displayName: BV - In My Arms
+        
+PhotoModePoses.make_me_feel_again_m:
+  $base: PhotoModePoses.idle_stand_01
+  acceptedWeaponConfig: POSE_HIDE_WEAPON
+  animationName: make_me_feel_again_m
+  animationTime: 0
+  category: PhotoModePoseCategories.InTheMoodForLoveM
+  displayName: BV - Make Me Feel Again
+        
+PhotoModePoses.you_are_flawless_m:
+  $base: PhotoModePoses.idle_stand_01
+  acceptedWeaponConfig: POSE_HIDE_WEAPON
+  animationName: you_are_flawless_m
+  animationTime: 0
+  category: PhotoModePoseCategories.InTheMoodForLoveM
+  displayName: BV - You Are Flawless
+        
+PhotoModePoses.you_are_my_sunshine_m:
+  $base: PhotoModePoses.idle_stand_01
+  acceptedWeaponConfig: POSE_HIDE_WEAPON
+  animationName: you_are_my_sunshine_m
+  animationTime: 0
+  category: PhotoModePoseCategories.InTheMoodForLoveM
+  displayName: BV - You Are My Sunshine
+        
+PhotoModePoses.i_can_read_you_m:
+  $base: PhotoModePoses.idle_stand_01
+  acceptedWeaponConfig: POSE_HIDE_WEAPON
+  animationName: i_can_read_you_m
+  animationTime: 0
+  category: PhotoModePoseCategories.InTheMoodForLoveM
+  displayName: Ellie - I Can Read You 
+
+PhotoModePoses.er_x_el_perfect_romance_f:
+  $base: PhotoModePoses.idle_stand_01
+  acceptedWeaponConfig: POSE_HIDE_WEAPON
+  animationName: er_x_el_perfect_romance_f
+  animationTime: 0
+  category: PhotoModePoseCategories.InTheMoodForLoveF
+  displayName: Eren x Ellie - Perfect Romance
+        
+PhotoModePoses.everlasting_love_f:
+  $base: PhotoModePoses.idle_stand_01
+  acceptedWeaponConfig: POSE_HIDE_WEAPON
+  animationName: everlasting_love_f
+  animationTime: 0
+  category: PhotoModePoseCategories.InTheMoodForLoveF
+  displayName: Ellie - Everlasting Love
+        
+PhotoModePoses.stand_by_me_f:
+  $base: PhotoModePoses.idle_stand_01
+  acceptedWeaponConfig: POSE_HIDE_WEAPON
+  animationName: stand_by_me_f
+  animationTime: 0
+  category: PhotoModePoseCategories.InTheMoodForLoveF
+  displayName: Ellie - Stand By Me
+        
+PhotoModePoses.talk_that_talk_f:
+  $base: PhotoModePoses.idle_stand_01
+  acceptedWeaponConfig: POSE_HIDE_WEAPON
+  animationName: talk_that_talk_f
+  animationTime: 0
+  category: PhotoModePoseCategories.InTheMoodForLoveF
+  displayName: Ellie - Talk That Talk
+        
+PhotoModePoses.warm_soul_f:
+  $base: PhotoModePoses.idle_stand_01
+  acceptedWeaponConfig: POSE_HIDE_WEAPON
+  animationName: warm_soul_f
+  animationTime: 0
+  category: PhotoModePoseCategories.InTheMoodForLoveF
+  displayName: Ellie - Warm Soul
+        
+PhotoModePoses.hold_me_close_f:
+  $base: PhotoModePoses.idle_stand_01
+  acceptedWeaponConfig: POSE_HIDE_WEAPON
+  animationName: hold_me_close_f
+  animationTime: 0
+  category: PhotoModePoseCategories.InTheMoodForLoveF
+  displayName: BV - Hold Me Close
+        
+PhotoModePoses.in_my_arms_f:
+  $base: PhotoModePoses.idle_stand_01
+  acceptedWeaponConfig: POSE_HIDE_WEAPON
+  animationName: in_my_arms_f
+  animationTime: 0
+  category: PhotoModePoseCategories.InTheMoodForLoveF
+  displayName: BV - In My Arms
+        
+PhotoModePoses.make_me_feel_again_f:
+  $base: PhotoModePoses.idle_stand_01
+  acceptedWeaponConfig: POSE_HIDE_WEAPON
+  animationName: make_me_feel_again_f
+  animationTime: 0
+  category: PhotoModePoseCategories.InTheMoodForLoveF
+  displayName: BV - Make Me Feel Again
+        
+PhotoModePoses.you_are_flawless_f:
+  $base: PhotoModePoses.idle_stand_01
+  acceptedWeaponConfig: POSE_HIDE_WEAPON
+  animationName: you_are_flawless_f
+  animationTime: 0
+  category: PhotoModePoseCategories.InTheMoodForLoveF
+  displayName: BV - You Are Flawless
+        
+PhotoModePoses.you_are_my_sunshine_f:
+  $base: PhotoModePoses.idle_stand_01
+  acceptedWeaponConfig: POSE_HIDE_WEAPON
+  animationName: you_are_my_sunshine_f
+  animationTime: 0
+  category: PhotoModePoseCategories.InTheMoodForLoveF
+  displayName: BV - You Are My Sunshine
+        
+PhotoModePoses.i_can_read_you_f:
+  $base: PhotoModePoses.idle_stand_01
+  acceptedWeaponConfig: POSE_HIDE_WEAPON
+  animationName: i_can_read_you_f
+  animationTime: 0
+  category: PhotoModePoseCategories.InTheMoodForLoveF
+  displayName: Ellie - I Can Read You
+        
+photo_mode.character.malePoses: &InTheMoodForLoveM
+    - !append-once PhotoModePoses.er_x_el_perfect_romance_m
+    - !append-once PhotoModePoses.everlasting_love_m
+    - !append-once PhotoModePoses.stand_by_me_m
+    - !append-once PhotoModePoses.talk_that_talk_m
+    - !append-once PhotoModePoses.warm_soul_m
+    - !append-once PhotoModePoses.hold_me_close_m
+    - !append-once PhotoModePoses.in_my_arms_m
+    - !append-once PhotoModePoses.make_me_feel_again_m
+    - !append-once PhotoModePoses.you_are_flawless_m
+    - !append-once PhotoModePoses.you_are_my_sunshine_m
+    - !append-once PhotoModePoses.i_can_read_you_m
+
+photo_mode.character.femalePoses: &InTheMoodForLoveF
+    - !append-once PhotoModePoses.er_x_el_perfect_romance_f
+    - !append-once PhotoModePoses.everlasting_love_f
+    - !append-once PhotoModePoses.stand_by_me_f
+    - !append-once PhotoModePoses.talk_that_talk_f
+    - !append-once PhotoModePoses.warm_soul_f
+    - !append-once PhotoModePoses.hold_me_close_f
+    - !append-once PhotoModePoses.in_my_arms_f
+    - !append-once PhotoModePoses.make_me_feel_again_f
+    - !append-once PhotoModePoses.you_are_flawless_f
+    - !append-once PhotoModePoses.you_are_my_sunshine_f
+    - !append-once PhotoModePoses.i_can_read_you_f
+
+photo_mode.character.quadrupedPoses: *InTheMoodForLoveF
+photo_mode.character.altPoses: *InTheMoodForLoveF
+photo_mode.character.bluemoonPoses: *InTheMoodForLoveF
+photo_mode.character.evelynPoses: *InTheMoodForLoveF
+photo_mode.character.hanakoPoses: *InTheMoodForLoveF
+photo_mode.character.judyPoses: *InTheMoodForLoveF
+photo_mode.character.lizzyPoses: *InTheMoodForLoveF
+photo_mode.character.meredithPoses: *InTheMoodForLoveF
+photo_mode.character.myersPoses: *InTheMoodForLoveF
+photo_mode.character.rogueoldPoses: *InTheMoodForLoveF
+photo_mode.character.panamPoses: *InTheMoodForLoveF
+photo_mode.character.purpleforcePoses: *InTheMoodForLoveF
+photo_mode.character.redmenacePoses: *InTheMoodForLoveF
+photo_mode.character.rogueyoungPoses: *InTheMoodForLoveF
+photo_mode.character.songbirdPoses: *InTheMoodForLoveF
+
+photo_mode.character.quadrupedPoses: *InTheMoodForLoveM
+photo_mode.character.johnnyNPCPoses: *InTheMoodForLoveM
+photo_mode.character.goroPoses: *InTheMoodForLoveM
+photo_mode.character.kerryPoses: *InTheMoodForLoveM
+photo_mode.character.viktorPoses: *InTheMoodForLoveM
+photo_mode.character.johnnyPoses: *InTheMoodForLoveM
