@@ -1,73 +1,134 @@
 ============================================================
-  CP2077 Local AI Setup v3.0 -- OpenCode Edition
-  Quick-start instructions
+  CP2077 Local AI Setup v4.0  --  EASY MODE EDITION
+  (one-click install, friendly visual UI, no commands)
 ============================================================
+
+WHAT THIS IS
+------------
+A private, fully local AI assistant that runs on YOUR PC (no
+cloud, no subscriptions) and helps you create / edit / fix
+mods for Cyberpunk 2077.
+
+You chat with the AI in a panel inside VS Code. When the AI
+wants to write a new file or change one, it shows you the
+exact change and waits for you to click APPROVE. Nothing
+happens behind your back.
+
+
+HOW TO INSTALL  (just two clicks!)
+----------------------------------
+
+  1. Double-click   INSTALL-EVERYTHING.bat
+
+     Windows will pop a UAC prompt -- click YES (it needs
+     admin rights to install Ollama and VS Code).
+
+     The script then downloads + installs everything:
+       - Ollama         (the AI engine)         ~500 MB
+       - VS Code        (the friendly editor)   ~100 MB
+       - Cline          (the chat panel)        ~50 MB
+       - Qwen3-Coder 7B (the AI brain)          ~5 GB
+
+     It tells you what it's doing the whole time. Total
+     download is around 6 GB -- 10 to 30 min on a normal
+     home connection. You can leave it running.
+
+     When it finishes, it puts a "AI Mod Helper" icon on
+     your Desktop.
+
+  2. Double-click "AI Mod Helper" on your Desktop.
+
+     It asks "what folder?" -- pick your CP2077 mod folder
+     (or any empty folder). VS Code opens.
+
+     A small popup window with a "first-time setup" guide
+     also opens in Notepad. Follow it -- it's 3 clicks
+     inside VS Code to wire Cline up to your local Ollama.
+
+  That's it. You're chatting with your local AI.
+
 
 WHAT'S IN THIS ZIP
 ------------------
-  RUN-SETUP-CHECK.bat          Double-click: checks your system
-  RUN-SETUP-AND-DOWNLOAD.bat   Double-click: downloads what's missing
-                               and installs the opencode.json config
-  scripts\check-local-ai-setup.ps1   The PowerShell brain behind the .bats
-  opencode.json                Drop this into %APPDATA%\opencode\
-                               (the .bats can do this for you)
-  SETUP-GUIDE.md               The full tutorial -- read this if anything
-                               is unclear
-  README.txt                   You are here
 
-HOW TO USE (THE FAST WAY)
+  INSTALL-EVERYTHING.bat            <-- run this first
+  AI-MOD-HELPER.bat                 <-- the launcher
+  CLINE-FIRST-TIME-SETUP.txt        <-- the 3-click guide
+  README.txt                        <-- you are here
+  opencode.json                     <-- bonus: config for the
+                                       advanced "OpenCode"
+                                       terminal UI (optional)
+  scripts\install-everything.ps1    <-- the installer brain
+  scripts\ai-mod-helper.ps1         <-- the launcher brain
+  scripts\check-local-ai-setup.ps1  <-- "is everything OK?"
+                                       diagnostic tool
+
+
+WHAT YOU GET TO DO IN THE CHAT
+------------------------------
+
+Type any of these into the Cline chat box at the bottom of
+VS Code:
+
+  > Make a new CET mod called HelloWorld that prints
+    "hello from V" in the CET console when the game starts.
+
+  > Read the .lua files in this folder and explain what
+    this mod does in plain English.
+
+  > Take this code: [paste]
+    Convert it from Lua to REDscript.
+
+  > Add a hotkey binding: pressing F7 should toggle the
+    effect on and off.
+
+  > I got this compile error: [paste]
+    Look at my files and fix it.
+
+The AI does the work, shows you a side-by-side diff of any
+change, and waits for you to click APPROVE.
+
+
+HARDWARE
+--------
+   GPU: NVIDIA card with 8+ GB VRAM (RTX 3060 12GB, RTX 4070,
+        RTX 5080, etc.) -- 16 GB sweet spot.
+  RAM: 16 GB minimum, 32 GB recommended.
+  DISK: 30 GB free.
+  WIN: Windows 10 or 11.
+
+
+THE OPTIONAL BIGGER MODEL
 -------------------------
-  1. Extract this zip ANYWHERE on your PC.
-     (Don't put it inside the Cyberpunk 2077 game folder.)
+The installer can also pull a much bigger / smarter model
+(Qwen3-Coder 30B-A3B, 18 GB). It asks Y/N before downloading
+since it's a large file. You can re-run the installer ANY TIME
+to add it later -- already-installed pieces are skipped.
 
-  2. Double-click   RUN-SETUP-CHECK.bat
-     -- It tells you what's already installed and what's missing.
-     -- It does NOT install anything yet.
 
-  3. Double-click   RUN-SETUP-AND-DOWNLOAD.bat
-     -- It downloads any missing AI models and writes opencode.json
-        to %APPDATA%\opencode\.
-     -- It will ASK before each big download (Y/N).
+IS SOMETHING NOT WORKING?
+-------------------------
+Re-run INSTALL-EVERYTHING.bat (it's safe to run again).
+If a specific check fails, double-click:
 
-  4. Open your mod folder in any terminal (PowerShell, Windows Terminal,
-     or VS Code's built-in terminal) and type:
-         opencode
-     The agentic AI TUI opens. Try:
-         "list every .reds file in this folder and explain what it does"
+   scripts\check-local-ai-setup.ps1
+     (or right-click -> Run with PowerShell)
 
-THE FIRST TIME YOU RUN A POWERSHELL SCRIPT
-------------------------------------------
-Windows blocks scripts by default. Open PowerShell ONCE and run:
+It tells you exactly what's missing and what to install.
 
-    Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
 
-Press Y to confirm. You only need to do this once, ever.
+I WANT TO USE THE TERMINAL INSTEAD (advanced)
+---------------------------------------------
+If you prefer a command-line experience, OpenCode (a TUI
+agentic coder) also works with the same Ollama backend. The
+opencode.json file in this zip is the matching config -- copy
+it to %APPDATA%\opencode\opencode.json. See the full guide
+(testtest.md) on the repo for details.
 
-If you're on a corporate machine and that command is blocked, the .bat
-files use   powershell -ExecutionPolicy Bypass   so they should work
-without changing the policy.
-
-WHAT YOU STILL NEED TO INSTALL MANUALLY
----------------------------------------
-The .bat files take care of the AI side (Ollama models + opencode.json).
-You install these yourself once:
-
-  Ollama          https://ollama.com/download/windows
-  OpenCode        scoop install opencode
-                  -- OR --
-                  npm install -g opencode-ai
-                  -- OR --
-                  download from https://github.com/sst/opencode/releases
-  WolvenKit       https://github.com/WolvenKit/WolvenKit-nightly-releases/releases/latest
-  CET             https://www.nexusmods.com/cyberpunk2077/mods/107
-  REDmod          Free DLC on Steam/GOG/Epic
-  .NET 8 Desktop  https://dotnet.microsoft.com/download/dotnet/8.0
-
-The CHECK script tells you which of those are missing.
 
 NEED HELP?
 ----------
-  Read SETUP-GUIDE.md (the full tutorial)
-  Or open an issue: https://github.com/AunEin/wkit/issues
+Open an issue: https://github.com/AunEin/wkit/issues
+Full guide:    https://github.com/AunEin/wkit/blob/axl-generator-add-toggles/testtest.md
 
 ============================================================
