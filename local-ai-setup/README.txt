@@ -1,8 +1,17 @@
 ============================================================
-  CP2077 Local AI Setup v4.1  --  EASY MODE EDITION
+  CP2077 Local AI Setup v4.2  --  EASY MODE EDITION
   (one-click install, friendly visual UI, no commands,
-   pre-loaded with pose-modding knowledge)
+   pre-loaded with pose-modding knowledge,
+   no UAC self-elevation, never closes silently)
 ============================================================
+
+KNOWN BUG FIXED IN v4.2:
+  v4.0/4.1 INSTALL-EVERYTHING.bat tried to self-elevate via
+  UAC. If you clicked NO on the UAC prompt -- or never saw it
+  because it was hidden -- the .bat would close instantly
+  with nothing happening. v4.2 NO LONGER auto-elevates and
+  ALWAYS pauses at the end so you can read what happened.
+  See TROUBLESHOOTING.txt if anything still goes wrong.
 
 WHAT THIS IS
 ------------
@@ -30,8 +39,10 @@ HOW TO INSTALL  (just two clicks!)
 
   1. Double-click   INSTALL-EVERYTHING.bat
 
-     Windows will pop a UAC prompt -- click YES (it needs
-     admin rights to install Ollama and VS Code).
+     A console window opens, shows what it's about to do,
+     and waits for you to press Y. NO admin rights needed
+     for the script itself -- if Ollama or VS Code's
+     installer wants admin, THEY pop their own UAC prompt.
 
      The script then downloads + installs everything:
        - Ollama         (the AI engine)         ~500 MB
@@ -68,6 +79,8 @@ WHAT'S IN THIS ZIP
   VERIFY-INSTALL.bat                <-- end-to-end smoke test
                                        (pings every layer)
   CLINE-FIRST-TIME-SETUP.txt        <-- the 3-click guide
+  TROUBLESHOOTING.txt               <-- "I double-clicked X
+                                       and Y happened" guide
   README.txt                        <-- you are here
   opencode.json                     <-- bonus: config for the
                                        advanced "OpenCode"
@@ -138,18 +151,22 @@ to add it later -- already-installed pieces are skipped.
 
 IS SOMETHING NOT WORKING?
 -------------------------
-Re-run INSTALL-EVERYTHING.bat (it's safe to run again).
+1. Read TROUBLESHOOTING.txt -- it covers the most common
+   "I double-clicked X and Y happened" cases.
 
-To CHECK without changing anything, double-click:
+2. Re-run INSTALL-EVERYTHING.bat (it's safe -- already-
+   installed pieces are skipped).
 
-   VERIFY-INSTALL.bat
-     -- This is the end-to-end smoke test. It actually pings
-        Ollama, generates a token from the model on your GPU,
-        confirms VS Code is callable, and confirms the Cline
-        extension is installed. Takes ~30 seconds.
+3. Run VERIFY-INSTALL.bat to see what actually works:
+     -- end-to-end smoke test (~30 seconds), generates a
+        real token from the model on your GPU and confirms
+        every layer is responding.
+
+4. install.log (next to INSTALL-EVERYTHING.bat) records
+   timestamps and exit codes -- attach it to a bug report
+   if you open one.
 
 For a static "is it installed?" check (no model load):
-
    scripts\check-local-ai-setup.ps1  (right-click -> Run with PowerShell)
 
 

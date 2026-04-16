@@ -1,0 +1,178 @@
+============================================================
+  CP2077 Local AI -- TROUBLESHOOTING
+  (the "I double-clicked it and X happened" guide)
+============================================================
+
+
+SYMPTOM:  INSTALL-EVERYTHING.bat opens for a second then closes,
+          nothing installed.
+----------------------------------------------------------------
+CAUSE:    Older v4.0 / v4.1 used UAC self-elevation. If UAC was
+          dismissed or hidden, the original window closed
+          before anything happened.
+FIX:      Update to v4.2+. The .bat no longer auto-elevates
+          and ALWAYS keeps the window open until you press a
+          key, even on errors. If you see a flash with v4.2+,
+          something else is wrong -- read on.
+
+
+SYMPTOM:  INSTALL-EVERYTHING.bat says "PowerShell is not
+          available on this system."
+----------------------------------------------------------------
+CAUSE:    Almost impossible on a normal Windows install -- but
+          some locked-down corporate / school machines disable
+          powershell.exe.
+FIX:      Open the Microsoft Store, search "PowerShell", install
+          the (free, official) PowerShell 7. Then re-run.
+
+
+SYMPTOM:  INSTALL-EVERYTHING.bat says "Missing file:
+          scripts\install-everything.ps1".
+----------------------------------------------------------------
+CAUSE:    The zip wasn't fully extracted, or the .bat is being
+          run from a different folder than the rest of the files.
+FIX:      Open the zip in Windows Explorer, click "Extract All",
+          pick a destination folder, then run the .bat from
+          INSIDE that extracted folder. Don't run it from the
+          zip's preview pane.
+
+
+SYMPTOM:  Window says "[FAIL] Could not download Ollama" or
+          "Could not download VS Code".
+----------------------------------------------------------------
+CAUSE:    Internet hiccup, corporate proxy, or the URL is
+          temporarily unreachable.
+FIX 1:    Check your internet, then re-run INSTALL-EVERYTHING.bat
+          (it skips already-done parts).
+FIX 2:    Install the missing tool by hand:
+            Ollama:   https://ollama.com/download/windows
+            VS Code:  https://code.visualstudio.com/  (User
+                      Installer, NOT the System Installer)
+          Then re-run INSTALL-EVERYTHING.bat to finish setup.
+
+
+SYMPTOM:  "winget detected" appears, then the winget install
+          fails with "the package is not available" or similar.
+----------------------------------------------------------------
+CAUSE:    Outdated winget package list.
+FIX:      Open PowerShell and run:
+            winget source update
+          Then re-run INSTALL-EVERYTHING.bat.
+
+
+SYMPTOM:  "[FAIL] Pull failed" during the Qwen3-Coder download.
+----------------------------------------------------------------
+CAUSE:    Connection dropped mid-download (5 GB takes a while),
+          or Ollama's library moved the model tag.
+FIX 1:    Re-run INSTALL-EVERYTHING.bat -- Ollama resumes.
+FIX 2:    If it keeps failing, open PowerShell and run
+          'ollama pull qwen3-coder' (without the :7b suffix);
+          this pulls whatever Ollama's current "default" tag is.
+FIX 3:    Last resort: 'ollama list' to see what got partially
+          downloaded, then 'ollama rm <name>' to clean up,
+          then 'ollama pull qwen3-coder:7b' fresh.
+
+
+SYMPTOM:  VERIFY-INSTALL.bat shows "API unreachable" but Ollama
+          IS installed.
+----------------------------------------------------------------
+CAUSE:    Ollama's background service isn't running.
+FIX 1:    Look at your system tray (bottom-right of your screen).
+          You should see a llama icon. If not:
+            - Open the Start Menu, type "Ollama", press Enter.
+              It launches and parks in the tray.
+FIX 2:    Make Ollama auto-start: Task Manager -> Startup apps
+          tab -> Ollama -> Enable.
+FIX 3:    Test by opening http://127.0.0.1:11434 in any browser.
+          You should see the text "Ollama is running".
+
+
+SYMPTOM:  VERIFY-INSTALL.bat says "VS Code 'code' not on PATH"
+          but VS Code IS installed and you can launch it.
+----------------------------------------------------------------
+CAUSE:    The 'code' command shim wasn't added to PATH (the
+          installer's "Add to PATH" checkbox was unticked), OR
+          you need to log out / log back in for the new PATH
+          to take effect.
+FIX 1:    Re-run the VS Code installer -- on the components
+          page, MAKE SURE "Add to PATH" is checked.
+FIX 2:    Or log off Windows and log back in, then re-run
+          VERIFY-INSTALL.bat.
+
+
+SYMPTOM:  Cline appears in VS Code but the model dropdown is
+          empty / says "no models found".
+----------------------------------------------------------------
+CAUSE:    Cline can't reach Ollama, or no models are pulled.
+FIX 1:    Open http://127.0.0.1:11434 in a browser. If it
+          doesn't say "Ollama is running", fix Ollama first
+          (see "API unreachable" above).
+FIX 2:    Open PowerShell, run 'ollama list'. You should see
+          at least one model. If not, run
+          'ollama pull qwen3-coder:7b'.
+FIX 3:    In Cline's settings: API Provider = Ollama, Base URL
+          = http://localhost:11434/  (with the trailing slash).
+
+
+SYMPTOM:  The model is downloaded and runs, but is REALLY slow
+          (more than ~5 seconds for short answers).
+----------------------------------------------------------------
+CAUSE:    Model is running on CPU instead of GPU, or your VRAM
+          is full.
+FIX 1:    Open PowerShell, run 'ollama ps'. The "PROCESSOR"
+          column should say "100% GPU". If it says "CPU" or
+          mixed, your NVIDIA driver might be too old. Update
+          to the latest at https://www.nvidia.com/Download/.
+FIX 2:    Close Chrome/Edge or any other GPU-heavy app to free
+          up VRAM.
+FIX 3:    Switch to the smaller model in Cline (gear icon ->
+          Model dropdown -> qwen3-coder:7b if you were on 30B).
+
+
+SYMPTOM:  Cline writes a file but Cyberpunk doesn't see the mod.
+----------------------------------------------------------------
+CAUSE:    File is in the wrong folder, OR it needs ArchiveXL/
+          TweakXL/REDmod to be enabled.
+FIX 1:    Check the install layout in _AI-Knowledge\POSE.md
+          (the "File Locations & Install Paths" section).
+          Common mistakes:
+            - .archive files MUST be in archive\pc\mod\
+            - .yaml tweaks MUST be in r6\tweaks\<your_folder>\
+            - CET Lua MUST be in
+              bin\x64\plugins\cyber_engine_tweaks\mods\<name>\
+FIX 2:    Make sure REDmod is enabled in the game launcher
+          (or that you're using a launcher that respects
+          archive\pc\mod\ directly).
+FIX 3:    Ask Cline: "Walk through the diagnostic checklist in
+          _AI-Knowledge\POSE.md and tell me which step is failing."
+
+
+SYMPTOM:  Antivirus / Windows Defender quarantines the .bat
+          or .ps1 files.
+----------------------------------------------------------------
+CAUSE:    Some AVs flag any unsigned .bat that calls
+          PowerShell with -ExecutionPolicy Bypass.
+FIX:      Add the extracted setup folder to your AV's exclusion
+          list. The scripts here are open source and visible --
+          you can read every line of them in Notepad.
+
+
+SYMPTOM:  "Access denied" creating the Desktop shortcut.
+----------------------------------------------------------------
+CAUSE:    Some Windows configurations block creating .lnk files
+          on the public Desktop.
+FIX:      Ignore the warning -- you can launch by double-
+          clicking AI-MOD-HELPER.bat directly from the
+          extracted folder. Or pin that .bat to your Start
+          menu / taskbar.
+
+
+I'M STUCK -- where do I report this?
+----------------------------------------------------------------
+1. Re-run INSTALL-EVERYTHING.bat once more.
+2. Re-run VERIFY-INSTALL.bat and screenshot the output.
+3. Open install.log (in the same folder as the .bat).
+4. File an issue at https://github.com/AunEin/wkit/issues
+   with the screenshot + the contents of install.log.
+
+============================================================
