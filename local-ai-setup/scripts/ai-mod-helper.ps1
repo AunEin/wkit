@@ -96,6 +96,50 @@ try {
 } catch {}
 
 # ---------------------------------------------------------------------------
+# Scaffold the workspace template into the chosen folder (idempotent).
+# Adds:
+#   .clinerules                <- AI system rules (Cline auto-loads)
+#   .vscode\settings.json      <- editor defaults for .reds/.xl/.workspot
+#   .vscode\extensions.json    <- recommended extensions (Cline, YAML, Lua)
+#   _AI-Knowledge\POSE.md      <- pose-modding bible
+#   _AI-Knowledge\POSE-MODDING-RECIPES.md
+#   _Examples\01_pose_pack_yaml\working_pose_pack.yaml
+#   _Examples\02_amm_collab_lua\working_amm_pose_lua.lua
+#   README.md                  <- workspace intro
+# Existing files in the user's folder are NEVER overwritten -- we only
+# create files that don't exist yet.
+# ---------------------------------------------------------------------------
+$ScriptDir   = Split-Path -Parent $MyInvocation.MyCommand.Path
+$RepoRoot    = Split-Path -Parent $ScriptDir
+$Template    = Join-Path $RepoRoot 'mod-workspace-template'
+
+if (Test-Path $Template) {
+    Write-Host ""
+    Write-Host "  Setting up the AI's reference docs in your folder..." -ForegroundColor Cyan
+    $copied = 0; $skipped = 0
+    Get-ChildItem -Path $Template -Recurse -Force | ForEach-Object {
+        $rel = $_.FullName.Substring($Template.Length).TrimStart('\','/')
+        $dst = Join-Path $Path $rel
+        if ($_.PSIsContainer) {
+            if (-not (Test-Path $dst)) { New-Item -ItemType Directory -Path $dst -Force | Out-Null }
+        } else {
+            if (Test-Path $dst) {
+                $skipped++
+            } else {
+                $parent = Split-Path -Parent $dst
+                if (-not (Test-Path $parent)) { New-Item -ItemType Directory -Path $parent -Force | Out-Null }
+                Copy-Item -Path $_.FullName -Destination $dst -Force
+                $copied++
+            }
+        }
+    }
+    if ($copied -gt 0)  { Write-Host ("  Added {0} new helper file(s) (existing files left untouched)." -f $copied) -ForegroundColor Green }
+    if ($skipped -gt 0) { Write-Host ("  Skipped {0} file(s) you already had." -f $skipped) -ForegroundColor DarkGray }
+} else {
+    Write-Host "  (No mod-workspace-template found beside this script -- skipping scaffold.)" -ForegroundColor DarkGray
+}
+
+# ---------------------------------------------------------------------------
 # Open VS Code
 # ---------------------------------------------------------------------------
 Write-Host ""

@@ -1,18 +1,28 @@
 ============================================================
-  CP2077 Local AI Setup v4.0  --  EASY MODE EDITION
-  (one-click install, friendly visual UI, no commands)
+  CP2077 Local AI Setup v4.1  --  EASY MODE EDITION
+  (one-click install, friendly visual UI, no commands,
+   pre-loaded with pose-modding knowledge)
 ============================================================
 
 WHAT THIS IS
 ------------
 A private, fully local AI assistant that runs on YOUR PC (no
 cloud, no subscriptions) and helps you create / edit / fix
-mods for Cyberpunk 2077.
+mods for Cyberpunk 2077 -- including pose packs, AMM Lua
+collabs, REDscript hooks, CET overlays, and mesh scaling.
 
 You chat with the AI in a panel inside VS Code. When the AI
 wants to write a new file or change one, it shows you the
 exact change and waits for you to click APPROVE. Nothing
 happens behind your back.
+
+NEW IN v4.1: when you launch "AI Mod Helper" and pick a
+folder, the helper drops a "_AI-Knowledge" folder into it
+with the full pose-modding bible (entity scopes, body rigs,
+ArchiveXL/TweakXL/AMM patterns, common pitfalls) AND a recipe
+file with copy-paste prompts for the most common modding
+tasks. The AI reads these on every conversation -- no need
+to teach it from scratch. Existing files are NEVER touched.
 
 
 HOW TO INSTALL  (just two clicks!)
@@ -52,16 +62,36 @@ WHAT'S IN THIS ZIP
 ------------------
 
   INSTALL-EVERYTHING.bat            <-- run this first
-  AI-MOD-HELPER.bat                 <-- the launcher
+  AI-MOD-HELPER.bat                 <-- the launcher (auto-
+                                       scaffolds AI knowledge
+                                       into your mod folder)
+  VERIFY-INSTALL.bat                <-- end-to-end smoke test
+                                       (pings every layer)
   CLINE-FIRST-TIME-SETUP.txt        <-- the 3-click guide
   README.txt                        <-- you are here
   opencode.json                     <-- bonus: config for the
                                        advanced "OpenCode"
                                        terminal UI (optional)
+
   scripts\install-everything.ps1    <-- the installer brain
   scripts\ai-mod-helper.ps1         <-- the launcher brain
-  scripts\check-local-ai-setup.ps1  <-- "is everything OK?"
-                                       diagnostic tool
+  scripts\verify-install.ps1        <-- the verifier brain
+  scripts\check-local-ai-setup.ps1  <-- diagnostic tool
+
+  mod-workspace-template\           <-- gets copied INTO your
+                                       mod folder by the helper
+    .clinerules                       (Cline auto-loads this)
+    _AI-Knowledge\
+      POSE.md                         (pose-modding bible)
+      POSE-MODDING-RECIPES.md         (copy-paste prompts)
+    _Examples\
+      01_pose_pack_yaml\              (working .yaml example)
+      02_amm_collab_lua\              (working AMM Lua example)
+    .vscode\settings.json             (editor defaults for
+                                       .reds, .xl, .workspot,
+                                       .ent, .app, .mi)
+    .vscode\extensions.json           (recommended extensions)
+    README.md                         (workspace intro)
 
 
 WHAT YOU GET TO DO IN THE CHAT
@@ -109,12 +139,18 @@ to add it later -- already-installed pieces are skipped.
 IS SOMETHING NOT WORKING?
 -------------------------
 Re-run INSTALL-EVERYTHING.bat (it's safe to run again).
-If a specific check fails, double-click:
 
-   scripts\check-local-ai-setup.ps1
-     (or right-click -> Run with PowerShell)
+To CHECK without changing anything, double-click:
 
-It tells you exactly what's missing and what to install.
+   VERIFY-INSTALL.bat
+     -- This is the end-to-end smoke test. It actually pings
+        Ollama, generates a token from the model on your GPU,
+        confirms VS Code is callable, and confirms the Cline
+        extension is installed. Takes ~30 seconds.
+
+For a static "is it installed?" check (no model load):
+
+   scripts\check-local-ai-setup.ps1  (right-click -> Run with PowerShell)
 
 
 I WANT TO USE THE TERMINAL INSTEAD (advanced)

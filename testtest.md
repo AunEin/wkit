@@ -1,13 +1,28 @@
-# Local AI Setup for Cyberpunk 2077 Modding v4.0 — Easy Mode Edition
+# Local AI Setup for Cyberpunk 2077 Modding v4.1 — Easy Mode + Pose-Modding Edition
 
-> **One installer. One launcher. Zero typed commands.**
-> A private, fully local AI assistant that helps you create / edit / fix Cyberpunk 2077 mods. Runs on your own RTX 5080 (or any 8 GB+ NVIDIA GPU). The AI lives inside **VS Code** as a friendly chat panel and can directly **read, write, edit, and run things** in your mod folder — with a click-to-approve button on every action.
+> **One installer. One launcher. Zero typed commands. Pre-loaded with pose-modding knowledge.**
+> A private, fully local AI assistant that helps you create / edit / fix Cyberpunk 2077 mods — pose packs, AMM Lua collabs, REDscript hooks, CET overlays, mesh scaling. Runs on your own RTX 5080 (or any 8 GB+ NVIDIA GPU). The AI lives inside **VS Code** as a friendly chat panel and can directly **read, write, edit, and run things** in your mod folder — with a click-to-approve button on every action.
+
+---
+
+## What's new in v4.1
+
+| Capability | v4.0 | **v4.1** |
+|---|---|---|
+| Pose-modding knowledge built in | ❌ | ✅ Full POSE.md bible auto-deployed to your mod folder |
+| Copy-paste prompts for common tasks | ❌ | ✅ POSE-MODDING-RECIPES.md (10 worked recipes) |
+| Working example files included | ❌ | ✅ Real shipping pose-pack `.yaml` and AMM Lua |
+| AI auto-loads context every session | ❌ | ✅ `.clinerules` file (Cline reads it automatically) |
+| End-to-end smoke test | ❌ | ✅ `VERIFY-INSTALL.bat` — pings every layer including a real model generation |
+| Workspace gets `.vscode` defaults | ❌ | ✅ File associations for `.reds`, `.xl`, `.workspot`, `.ent` |
+
+The launcher copies a `mod-workspace-template/` into whatever folder you pick — but **never overwrites your existing files**. So you can run it on an existing mod and only the missing helper files appear.
 
 ---
 
 ## What changed from v3.0
 
-| | v3.0 (OpenCode TUI) | **v4.0 (Easy Mode)** |
+| | v3.0 (OpenCode TUI) | **v4.x (Easy Mode)** |
 |---|---|---|
 | Interface | Terminal (text-only) | **VS Code chat panel** (visual, click-to-approve) |
 | Install steps | ~6 manual steps | **1 double-click** |
@@ -22,7 +37,7 @@
 
 ### 1. Download the release zip
 
-From [the releases page](https://github.com/AunEin/wkit/releases/latest), download `CP2077-AI-Setup-v4.0.zip` and **extract it anywhere** on your PC (Desktop, Documents, anywhere — just **not** inside the game folder).
+From [the releases page](https://github.com/AunEin/wkit/releases/latest), download `CP2077-AI-Setup-v4.1.zip` and **extract it anywhere** on your PC (Desktop, Documents, anywhere — just **not** inside the game folder).
 
 ### 2. Double-click `INSTALL-EVERYTHING.bat`
 
@@ -51,6 +66,8 @@ It then:
 
 A folder picker pops up. Choose your CP2077 mod folder (or any empty folder you want as a sandbox).
 
+The launcher then drops a small AI-knowledge bundle into that folder (`.clinerules`, `_AI-Knowledge/POSE.md`, `_AI-Knowledge/POSE-MODDING-RECIPES.md`, `.vscode/`, working examples). **Existing files are never overwritten.**
+
 VS Code opens with that folder.
 
 ### 4. The 3 clicks inside VS Code
@@ -71,6 +88,50 @@ You're now chatting with your local AI. Try:
 ---
 
 ## What you can ask the AI
+
+### Make a pose pack work for Male V
+
+This is the most common pose-mod bug — male animations bind only to `man_big` NPCs (Jackie, River, Reed, Kurt) and forget Male V (`man_average`).
+
+Drag your existing `.xl` and `.yaml` files into the Cline chat, then:
+
+> *"Patch this pose pack so Male V (man_average) gets every pose. The male `.anims` file is `vesna_mpg_male_pm.anims`. Don't touch the female bindings. Use `!append-once`. Show me a diff for each file."*
+
+The AI reads `_AI-Knowledge/POSE.md` (auto-deployed in your workspace), looks up the **5 required Male V entity scopes** (`player_ma_photomode.ent`, `player_ma_photomode_ep1.ent`, `photomode_npc_man_average.ent`, `johnny_photomode.ent`, `photomode_ma.ent`), then proposes the exact diffs and waits for your approval.
+
+### Strip female entries from a male-only pose patch
+
+> *"Strip every female entity binding, female pose category, and female character assignment from this `.xl` and `.yaml`. Keep only male content."*
+
+The AI knows the full female-strip checklist (`player_wa_*`, `photomode_wa.ent`, `woman_average`, `npv_fem*`, `femalePoses`, `judyPoses`, `panamPoses`, `altPoses`, `evelynPoses`, `hanakoPoses`, `lizzyPoses`, `meredithPoses`, `myersPoses`, `rogueoldPoses`, `rogueyoungPoses`, `songbirdPoses`, …).
+
+### Fix an empty AMM pose category
+
+> *"This AMM Lua only populates `[\"Big\"]` but Male V's category is empty. Copy the animation list into `[\"Man Average\"]`."*
+
+### Build a brand-new pose pack from scratch
+
+You still need WolvenKit + Blender to export the `.anims`, `.workspot`, and `.archive`. The AI builds the **wrapper files** around them:
+
+> *"I just exported a new pose pack with 15 poses for Male V. Animation names are `pose_01` through `pose_15`. Pose pack name 'Test Poses', author 'MyName'. Make me the `.xl`, the `.yaml` (new `PhotoModePoseCategories.MyName_test` category, registered to `malePoses` + Johnny + Goro + Kerry + Viktor), the AMM Lua, a README, and a folder mirror of the install layout."*
+
+### Diagnose "my pose mod doesn't show up"
+
+> *"I installed this pose pack but the poses don't show in Photo Mode for Male V. Walk through the diagnostic checklist from `_AI-Knowledge/POSE.md` and tell me which step is failing."*
+
+The AI checks: does the `.xl` bind to `player_ma_photomode.ent` AND `photomode_ma.ent`? Does the `.yaml` have a `photo_mode.character.malePoses:` block? Do `animationName:` values match what's referenced in the `.workspot` (will tell you to verify in WolvenKit since it can't read binary `.workspot`)?
+
+### Mesh scaling — make Male V bigger
+
+> *"Make Male V appear 1.2x bigger and 0.15m taller in Photo Mode only. Use the BigV approach documented in `_AI-Knowledge/POSE.md` §'Mesh Scaling' — field-by-field Vector3, cast to `entSkinnedMeshComponent`, hook `PhotoModePlayerEntityComponent.SetupInventory` and `gameuiPhotoModeMenuController.OnHide`. Build a `ScriptableSystem` in `r6/scripts/` and a CET overlay."*
+
+### Other recipes
+
+See `_AI-Knowledge/POSE-MODDING-RECIPES.md` (auto-deployed in your workspace) for the full list — patches, AMM fixes, debugging, packaging, and more. Each recipe is a copy-paste prompt block.
+
+---
+
+## What you can ask the AI for non-pose mods
 
 ### Make a brand-new mod
 
