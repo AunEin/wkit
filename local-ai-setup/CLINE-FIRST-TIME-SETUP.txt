@@ -1,0 +1,113 @@
+============================================================
+  CLINE -- FIRST-TIME SETUP (3 clicks, takes ~30 seconds)
+============================================================
+
+Cline is the AI chat panel that lives inside VS Code. It can
+read your mod files, write new ones, edit existing ones, and
+run commands -- all with a button you click to approve every
+change. This is what you'll use day-to-day.
+
+The first time you open Cline, it asks you to pick which AI to
+use. We're using your LOCAL Ollama, so:
+
+
+STEP 1.  Double-click "AI Mod Helper" on your Desktop.
+         (It pops up a folder picker -- pick your mod folder,
+          or any empty folder you want to use as a sandbox.)
+
+         VS Code opens.
+
+
+STEP 2.  Look at the LEFT sidebar of VS Code. You'll see a
+         small ROBOT ICON (it might say "Cline" when you hover).
+
+         Click it.
+
+         A chat panel slides out on the left.
+
+
+STEP 3.  Cline shows a setup page. Fill it in like this:
+
+           +------------------------------------------------+
+           |  API Provider:                                 |
+           |    [ Ollama          v ]   <-- pick this       |
+           |                                                |
+           |  Base URL:                                     |
+           |    [ http://localhost:11434/         ]         |
+           |    (already filled -- don't touch)             |
+           |                                                |
+           |  Model:                                        |
+           |    [ qwen2.5-coder:7b              v ]         |
+           |    (or qwen3-coder:30b-a3b-q4_K_M if you       |
+           |     downloaded the bigger model)               |
+           |                                                |
+           |          [  Let's go!  ]                       |
+           +------------------------------------------------+
+
+         Click  "Let's go!"  (or whatever the OK button says
+         on your version).
+
+
+THAT'S IT. You now have a working local AI assistant.
+
+Try it -- in the chat box at the bottom, type:
+
+    > List all files in this folder and tell me what you see.
+
+Cline will read the folder, summarise what's there, and wait
+for your next instruction.
+
+Some good starter prompts:
+
+    > Make a new CET mod called HelloWorld that prints
+      "hello from V" in the CET console when the game starts.
+
+    > Read the .lua files in this folder and explain what
+      this mod does.
+
+    > Take this code:  [paste]
+      ...and convert it from Lua to REDscript.
+
+When the AI wants to write or change a file, it shows you the
+exact change first and waits for you to click APPROVE. Nothing
+happens behind your back.
+
+
+============================================================
+  CHANGING THE MODEL LATER
+============================================================
+
+In Cline, click the gear icon at the top of the chat panel ->
+API Provider section -> change the Model dropdown -> Done.
+
+Tip: use qwen2.5-coder:7b for fast everyday questions, switch
+to qwen3-coder:30b-a3b-q4_K_M for hard refactors or when you
+need more reasoning power.
+
+
+============================================================
+  IF SOMETHING GOES WRONG
+============================================================
+
+* The model dropdown is empty
+  -> Ollama isn't running. Look at the system tray (bottom-
+     right of your screen) for the llama icon. If it's not
+     there, search "Ollama" in the Start Menu and open it.
+
+* "API Provider" doesn't show "Ollama"
+  -> You might have the wrong extension. In VS Code, go to
+     the Extensions tab and search for "Cline" by saoudrizwan.
+     Install/reinstall it.
+
+* Cline is too slow
+  -> Switch to the smaller qwen2.5-coder:7b model.
+  -> Close Chrome, Edge, or any GPU-heavy app to free VRAM.
+
+* You want to start over
+  -> Re-run INSTALL-EVERYTHING.bat. Already-installed pieces
+     are skipped, missing pieces get reinstalled.
+
+* Need help?
+  -> Open an issue: https://github.com/AunEin/wkit/issues
+
+============================================================
